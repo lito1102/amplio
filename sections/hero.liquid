@@ -1,0 +1,54 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<div className="hero hero__position">
+  {%- if section.settings.image != blank -%}
+    <img
+      srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
+        {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: 'master' }} 360w,{%- endif -%}
+        {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: 'master' }} 535w,{%- endif -%}
+        {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: 'master' }} 750w,{%- endif -%}
+        {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | img_url: 'master' }} 2000w,{%- endif -%}
+        {%- if section.settings.image.width >= 2040 -%}{{ section.settings.image | img_url: '2040x' }} 2040w,{%- endif -%}"
+      src="{{ section.settings.image | img_url: 'master' }}"
+      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+      alt="{{ section.settings.image.alt | escape }}"
+      loading="lazy"
+      width="{{ section.settings.image.width }}"
+      class="hero__img-bg"
+    >
+  {%- else -%}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+  {%- endif -%}
+  <div className="hero__content-wrapper">
+    <div className="hero__content">
+      <div className="hero__info-box hero__info-left mx-auto">
+        <h1 className="hero__heading">FEEL THE BOARD</h1>
+        <h1 className="hero__heading">TAKE THE RIDE</h1>
+        <p className="hero__text">Our new decks with fresh designs are on sale now.</p>
+        <div className="site-cta-wrapper">
+          <a href="#" className="site-cta">
+            SHOP DECKS
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Hero image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Hero image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero image"
+      }
+    ]
+  }
+{% endschema %}
