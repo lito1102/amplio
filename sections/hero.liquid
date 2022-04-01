@@ -1,6 +1,6 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
 
-<div className="hero hero__position">
+<div class="hero hero__position">
   {%- if section.settings.image != blank -%}
     <img
       srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
@@ -19,17 +19,34 @@
   {%- else -%}
     {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
   {%- endif -%}
-  <div className="hero__content-wrapper">
-    <div className="hero__content">
-      <div className="hero__info-box hero__info-left mx-auto">
-        <h1 className="hero__heading">FEEL THE BOARD</h1>
-        <h1 className="hero__heading">TAKE THE RIDE</h1>
-        <p className="hero__text">Our new decks with fresh designs are on sale now.</p>
-        <div className="site-cta-wrapper">
-          <a href="#" className="site-cta">
-            SHOP DECKS
-          </a>
-        </div>
+
+  {% comment %}
+    HERO SECTION BLOCKS
+  {% endcomment %}
+  {% assign opacity = section.settings.opacity | divided_by: 100.00 %}
+  <div class="hero__content-wrapper" style="background-color: {{ section.settings.background | color_modify: 'alpha', opacity }};">
+    <div class="hero__content">
+      <div class="hero__info-box hero__info-{{ section.settings.content_alignment }} mx-auto">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {% when 'heading' %}
+            <h1 class="hero__heading" {{ block.shopify_attributes }}>
+              {{ block.settings.hero_one_title | escape }}
+            </h1>
+            
+            {% when 'text' %}
+            <p class="hero__text" {{ block.shopify_attributes }}>
+              {{ block.settings.hero_one_text | escape }}
+            </p>
+
+            {% when 'button' %}
+              {%- if block.settings.button_label != blank -%}
+              <a href="{{ block.settings.button_link }}" class="hero__cta site-cta" {{ block.shopify_attributes }}>
+                {{ block.settings.button_label | escape }}
+              </a>              
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
       </div>
     </div>
   </div>
@@ -43,11 +60,99 @@
         "type": "image_picker",
         "id": "image",
         "label": "Hero image"
+      },
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Hero image overlay opacity",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "label": "Opacity",
+        "default": 10
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ],
+        "default": "left",
+        "label": "Hero content alignment"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "t:sections.image-with-text.blocks.heading.name",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "hero_one_title",
+            "label": "Hero heading",
+            "default": "Ride your board"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "t:sections.image-with-text.blocks.text.name",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "hero_one_text",
+            "label": "Hero paragraph",
+            "default": "Professional decks and beautiful designs."
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "name": "t:sections.image-with-text.blocks.button.name",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+            "default": "SHOP DECKS"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+          }
+        ]
       }
     ],
     "presets": [
       {
-        "name": "Hero image"
+        "name": "Hero image",
+        "blocks": [
+          {
+            "type": "heading"
+          },
+          {
+            "type": "text"
+          },
+          {
+            "type": "button"
+          }
+        ]
       }
     ]
   }

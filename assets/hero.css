@@ -9,8 +9,8 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	background-color: rgba(48, 186, 228, 0.3);
+	height: 100vh;
+	/* background-color: rgba(48, 186, 228, 0.3); */
 	z-index: 1;
 }
 .hero__img-bg {
@@ -22,7 +22,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 9;
+	z-index: 2;
 }
 .hero__content {
 	position: absolute;
@@ -53,8 +53,11 @@
 	letter-spacing: 0.1em;
 	line-height: 1.4em;
 }
-.site-cta-wrapper > a:not(:last-child) {
-	margin-right: 1em;
+.hero__cta {
+	display: inline-block;
+}
+a.hero__cta:not(:last-child) {
+	margin-right: 0.8em;
 }
 .site-cta {
 	margin-top: 1em;
