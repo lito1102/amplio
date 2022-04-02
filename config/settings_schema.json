@@ -1,9 +1,9 @@
 [
 	{
 		"name": "theme_info",
-		"theme_name": "Dawn",
-		"theme_version": "4.0.0",
-		"theme_author": "Shopify",
+		"theme_name": "Amplio",
+		"theme_version": "1.0.0",
+		"theme_author": "The Creators Lounge",
 		"theme_documentation_url": "https://help.shopify.com/en/manual/online-store/themes",
 		"theme_support_url": "https://support.shopify.com/"
 	},
@@ -15,6 +15,21 @@
 				"id": "mega_title",
 				"label": "Mega Menu Title",
 				"info": "Don't want a megamenu? Leave it blank"
+			},
+			{
+				"type": "select",
+				"id": "megamenu_style",
+				"label": "Megamenu styles",
+				"options": [
+					{
+						"value": "megamenu-style-1",
+						"label": "Megamenu style 1"
+					},
+					{
+						"value": "megamenu-style-2",
+						"label": "Megamenu style 2"
+					}
+				]
 			}
 		]
 	},

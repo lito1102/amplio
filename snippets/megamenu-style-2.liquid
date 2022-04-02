@@ -1,0 +1,62 @@
+{% style %}
+  .megamenu__collection-img-style2 {
+  padding-bottom: 100%;
+  position: relative
+}
+
+.megamenu__collection-img-style2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc
+}
+
+.megamenu__collection-img-style2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.megamenu__collection-heading-style2 > a {
+  font-family: var(--font-body-family);
+  font-size: 1.6rem;
+  letter-spacing: .2em;
+  color: var(--primary-dark);
+  text-align: center
+}
+{% endstyle %}
+
+<div class="nav-dropdown text-left megamenu"> 
+  <div class="container">
+    <div class="row">
+      {%- for block in section.blocks -%}
+        <div class="col-sm-3 col-md-3 col-lg-3 megamenu-grid-column-animate">
+          <a href="{{ block.settings.mega_menu_img_link }}" class="megamenu__collection-img-style2">
+          {%- if block.settings.mega_menu_image != blank -%}
+          <img
+            srcset="{%- if block.settings.mega_menu_image.width >= 165 -%}{{ block.settings.mega_menu_image | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if block.settings.mega_menu_image.width >= 360 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 360w,{%- endif -%}
+            {%- if block.settings.mega_menu_image.width >= 535 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 535w,{%- endif -%}
+            {%- if block.settings.mega_menu_image.width >= 750 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 750w,{%- endif -%}
+            {%- if block.settings.mega_menu_image.width >= 2000 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 2000w,{%- endif -%}
+            {%- if block.settings.mega_menu_image.width >= 2040 -%}{{ block.settings.mega_menu_image | img_url: '2040x' }} 2040w,{%- endif -%}"
+            src="{{ block.settings.mega_menu_image | img_url: 'master' }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ section.settings.image.alt | escape }}" loading="lazy" width="{{ section.settings.image.width }}">
+          {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </a>
+          <h5 class="megamenu__collection-heading-style2 py-3">
+            <a href="{{ block.settings.mega_menu_heading_link }}">{{ block.settings.mega_menu_column_heading }}</a>
+          </h5>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

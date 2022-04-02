@@ -1,0 +1,42 @@
+<div class="nav-dropdown text-left megamenu">
+  <div>
+    <div class="container">
+      <div class="row">
+
+        {%- for block in section.blocks -%}
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <a href="{{ block.settings.mega_menu_img_link }}" class="megamenu__collection-img">
+            {%- if block.settings.mega_menu_image != blank -%}
+            <img
+              srcset="{%- if block.settings.mega_menu_image.width >= 165 -%}{{ block.settings.mega_menu_image | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if block.settings.mega_menu_image.width >= 360 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 360w,{%- endif -%}
+              {%- if block.settings.mega_menu_image.width >= 535 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 535w,{%- endif -%}
+              {%- if block.settings.mega_menu_image.width >= 750 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 750w,{%- endif -%}
+              {%- if block.settings.mega_menu_image.width >= 2000 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 2000w,{%- endif -%}
+              {%- if block.settings.mega_menu_image.width >= 2040 -%}{{ block.settings.mega_menu_image | img_url: '2040x' }} 2040w,{%- endif -%}"
+              src="{{ block.settings.mega_menu_image | img_url: 'master' }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+              alt="{{ section.settings.image.alt | escape }}" loading="lazy" width="{{ section.settings.image.width }}">
+            {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </a>
+          <h5 class="megamenu__collection-heading py-3">
+            <a href="{{ block.settings.mega_menu_heading_link }}">{{ block.settings.mega_menu_column_heading }}</a>
+          </h5>
+          <ul class="megamenu__list text-left nav-dropdown__list">
+            {%- for link in block.settings.mega_menu_links.links -%}
+            <li class="nav-dropdown__list-item">
+              <a href="{{ link.url }}" class="nav-dropdown__link">
+                {{ link.title }}
+              </a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+        {%- endfor -%}
+
+      </div>
+    </div>
+  </div>
+</div>
