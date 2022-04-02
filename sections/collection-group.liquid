@@ -1,0 +1,102 @@
+{{ 'collection-group.css' | asset_url | stylesheet_tag }}
+
+<section class="grid-collection">
+  <div class="container">
+    <h1 class="section-heading section-heading--{{ section.settings.section_heading_alignment }}">{{ section.settings.section_heading }}</h1>
+    <div class="grid-collection__grid-parent">
+      {%- for block in section.blocks -%}
+      <div class="grid-collection__grid-item">
+        <a href="{{ block.settings.collection.url }}">
+          <div class="grid-collection__img-wrapper">
+            {%- if block.settings.collection.image != blank -%}
+                  <img
+                    srcset="{%- if block.settings.collection.image.width >= 165 -%}{{ block.settings.collection.image | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if block.settings.collection.image.width >= 360 -%}{{ block.settings.collection.image | img_url: 'master' }} 360w,{%- endif -%}
+                    {%- if block.settings.collection.image.width >= 535 -%}{{ block.settings.collection.image | img_url: 'master' }} 535w,{%- endif -%}
+                    {%- if block.settings.collection.image.width >= 750 -%}{{ block.settings.collection.image | img_url: 'master' }} 750w,{%- endif -%}
+                    {%- if block.settings.collection.image.width >= 2000 -%}{{ block.settings.collection.image | img_url: 'master' }} 2000w,{%- endif -%}
+                    {%- if block.settings.collection.image.width >= 2040 -%}{{ block.settings.collection.image | img_url: '2040x' }} 2040w,{%- endif -%}"
+                    src="{{ block.settings.collection.image | img_url: 'master' }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                    alt="{{ block.settings.collection.image.alt | escape }}" 
+                    loading="lazy" 
+                    width="{{ block.settings.collection.image.width }}"
+                  >
+                {%- else -%}
+                  {{ 'collection-5' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+          </div>
+        </a>
+        <div class="grid-collection__grid-item-info">
+            <a href="{{ block.settings.collection.url }}">
+              <h5>{{ block.settings.collection.title }}</h5>
+            </a>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Collection group",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Top heading",
+        "default": "POPULAR DECKS"
+      },
+      {
+        "type": "select",
+        "id": "section_heading_alignment",
+        "options": [
+          {
+            "value": "aligned-left",
+            "label": "Left"
+          },
+          {
+            "value": "aligned-center",
+            "label": "Center"
+          }
+        ],
+        "default": "aligned-center",
+        "label": "POPULAR DECKS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "featured_collection",
+        "name": "Collection",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection group",
+        "blocks": [
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          },
+          {
+            "type": "featured_collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

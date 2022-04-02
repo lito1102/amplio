@@ -6,7 +6,7 @@
 
 .grid-collection__grid-parent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
   width: 100%
 }
@@ -29,7 +29,7 @@
   text-align: center
 }
 
-.grid-collection__grid-item-info>h5 {
+.grid-collection__grid-item-info> a h5 {
   font-size: 2rem;
   letter-spacing: .1em
 }
