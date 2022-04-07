@@ -1,3 +1,8 @@
+/* .hero__position{
+	position: absolute;
+	top:0;
+	left: 0;
+} */
 .hero {
 	width: 100%;
 	height: 100vh;
@@ -27,7 +32,7 @@
 	position: absolute;
 	width: 100%;
 	max-width: 100%;
-	top: 50%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }

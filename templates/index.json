@@ -52,11 +52,20 @@
 		"collection_group": {
 			"type": "collection-group",
 			"blocks": {
-				"featured_collection": {
+				"featured_collection1": {
+					"type": "featured_collection"
+				},
+				"featured_collection2": {
+					"type": "featured_collection"
+				},
+				"featured_collection3": {
+					"type": "featured_collection"
+				},
+				"featured_collection4": {
 					"type": "featured_collection"
 				}
 			},
-			"block_order": ["featured_collection"]
+			"block_order": ["featured_collection1", "featured_collection2", "featured_collection3", "featured_collection4"]
 		}
 	},
 	"order": ["hero", "rich_text", "collection_group"]

@@ -1,8 +1,6 @@
-/* .site-header-wrapper {
-	position: fixed;
-	z-index: 100;
-	width: 100%;
-} */
+.site-header-wrapper {
+	position: relative;
+}
 .site-header {
 	width: 100%;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
