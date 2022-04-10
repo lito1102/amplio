@@ -1,0 +1,112 @@
+{{ 'collection-products.css' | asset_url | stylesheet_tag }}
+
+<section class="single-product">
+  <div class="container">
+    <h1 class="section-heading section-heading--aligned-{{ section.settings.content_alignment }}">
+    {{ section.settings.collection_section_title }}
+    </h1>
+    <div class="single-product__grid single-product__grid-parent">
+
+      {%- for product in section.settings.collection.products limit: section.settings.total_products_to_show -%}
+        <div class="single-product__grid-item">
+          <a href="{{ product.url }}" class="single-product__img-link">
+            {%- if product.images[0] != blank -%}
+              <img
+                srcset="{%- if product.images[0].width >= 165 -%}{{ product.images[0] | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if product.images[0].width >= 360 -%}{{ product.images[0] | img_url: 'master' }} 360w,{%- endif -%}
+                {%- if product.images[0].width >= 535 -%}{{ product.images[0] | img_url: 'master' }} 535w,{%- endif -%}
+                {%- if product.images[0].width >= 750 -%}{{ product.images[0] | img_url: 'master' }} 750w,{%- endif -%}
+                {%- if product.images[0].width >= 2000 -%}{{ product.images[0] | img_url: 'master' }} 2000w,{%- endif -%}
+                {%- if product.images[0].width >= 2040 -%}{{ product.images[0] | img_url: '2040x' }} 2040w,{%- endif -%}"
+                src="{{ product.images[0] | img_url: 'master' }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ product.images[0].alt | escape }}" 
+                loading="lazy" 
+                width="{{ product.images[0].width }}"
+              >
+            {%- else -%}
+              {{ 'product-2' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          </a>
+          <a href="{{ product.url }}" class="single-product__link-content">
+            <div class="single-product__content">
+              <div class="single-product__name">
+            {%- if section.settings.show_product_name == true -%}
+                <p>{{ product.title }}</p>
+            {%- endif -%}
+              </div>
+
+              <div class="single-product__price">
+            {%- if section.settings.show_product_price == true -%}
+                <span>{{ product.price | money }}</span>
+            {%- endif -%}
+              </div>
+            </div>
+          </a>
+        </div>
+      {%- endfor -%}
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Collection products",
+    "settings": [
+      {
+      "type": "text",
+      "id": "collection_section_title",
+      "label": "Collection section title",
+      "default": "FAVORITE BOARDS"
+      },
+      {
+        "type": "select",
+        "id": "content_alignment",
+        "options": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          }
+        ],
+        "label": "Section title alignment",
+        "default": "center"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Featured Collection"
+      },
+      {
+        "type": "range",
+        "id": "total_products_to_show",
+        "min": 1,
+        "max": 16,
+        "step": 1,
+        "label": "Total products to show",
+        "default": 4
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_name",
+        "label": "Show product name",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_price",
+        "label": "Show product price",
+        "default": true
+      }
+    ],
+    "presets": [
+    {
+      "name": "Collection products"
+    }
+  ]
+  }
+{% endschema %}

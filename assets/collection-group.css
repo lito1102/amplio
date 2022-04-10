@@ -6,21 +6,21 @@
 
 .grid-collection__grid-parent {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   width: 100%
 }
 
 .grid-collection__img-wrapper {
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1;
   background-color: var(--placeholder-bg);
   box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
   border-radius: 5px
 }
 
 .grid-collection__img-wrapper>img {
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1;
   border-radius: 5px
 }
 

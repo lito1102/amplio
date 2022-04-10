@@ -1,0 +1,119 @@
+{{ 'two-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<section class="overlap">
+  <div class="container">
+    <div class="overlap__container">
+      <div class="overlap__item overlap--img-direction-{{ section.settings.content_direction }}">
+        <a href="#">
+          <div class="overlap__image-overlap">
+            <div class="overlap-animate overlap__image-overlap--image-1">
+              {%- if section.settings.image_1 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_1.width >= 165 -%}{{ section.settings.image_1 | img_url: '165x' }} 165w,{%- endif -%}
+                        {%- if section.settings.image_1.width >= 360 -%}{{ section.settings.image_1 | img_url: 'master' }} 360w,{%- endif -%}
+                        {%- if section.settings.image_1.width >= 535 -%}{{ section.settings.image_1 | img_url: 'master' }} 535w,{%- endif -%}
+                        {%- if section.settings.image_1.width >= 750 -%}{{ section.settings.image_1 | img_url: 'master' }} 750w,{%- endif -%}
+                        {%- if section.settings.image_1.width >= 2000 -%}{{ section.settings.image_1 | img_url: 'master' }} 2000w,{%- endif -%}
+                        {%- if section.settings.image_1.width >= 2040 -%}{{ section.settings.image_1 | img_url: '2040x' }} 2040w,{%- endif -%}"
+                  src="{{ section.settings.image_1 | img_url: 'master' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_1.alt | escape }}" loading="lazy" width="{{ section.settings.image_1.width }}"
+                >
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="overlap-animate overlap__image-overlap--image-2">
+              {%- if section.settings.image_2 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | img_url: '165x' }} 165w,{%- endif -%}
+                        {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: 'master' }} 360w,{%- endif -%}
+                        {%- if section.settings.image_2.width >= 535 -%}{{ section.settings.image_2 | img_url: 'master' }} 535w,{%- endif -%}
+                        {%- if section.settings.image_2.width >= 750 -%}{{ section.settings.image_2 | img_url: 'master' }} 750w,{%- endif -%}
+                        {%- if section.settings.image_2.width >= 2000 -%}{{ section.settings.image_2 | img_url: 'master' }} 2000w,{%- endif -%}
+                        {%- if section.settings.image_2.width >= 2040 -%}{{ section.settings.image_2 | img_url: '2040x' }} 2040w,{%- endif -%}"
+                  src="{{ section.settings.image_2 | img_url: 'master' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_2.alt | escape }}" loading="lazy" width="{{ section.settings.image_2.width }}"
+                >
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="overlap__item overlap__text overlap--text-aligned-left">
+        <h1>{{ section.settings.heading }}</h1>
+        <p>
+          {{ section.settings.text }}
+        </p>
+        <a href="{{ section.settings.button_link_url }}" class="site-cta" {{ block.shopify_attributes }}>
+          {{ section.settings.button_link_label }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Two image with text",
+    "settings": [
+      {
+        "type": "select",
+        "id": "content_direction",
+        "label": "Content direction",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "DESIGNS MADE TO SKATE"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error veniam? Animi exercitationem rerum perferendis modi, quaerat saepe culpa placeat pariatur eveniet officia cupiditate, odio debitis dolores at! Necessitatibus, molestias"
+      },
+      {
+        "type": "text",
+        "id": "button_link_label",
+        "label": "Button label",
+        "default": "LEARN MORE"
+      },
+      {
+        "type": "url",
+        "id": "button_link_url",
+        "label": "Link url"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Image 2"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Two image with text"
+      }
+    ]
+  }
+{% endschema %}

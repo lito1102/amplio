@@ -15,10 +15,10 @@ const singleProductSection = document.querySelector('.single-product');
 
 let twoScene = new ScrollMagic.Scene({
 	triggerElement: '.single-product__grid-parent',
-	// triggerHook: 1,
+	triggerHook: 1,
 	duration: 0,
 	offset: 100,
-	// reverse: true,
+	reverse: false,
 })
 	.setTween(productTl)
 	// .addIndicators()
@@ -33,10 +33,10 @@ const featureSection = document.querySelector('.product-info__content');
 
 const featureScene = new ScrollMagic.Scene({
 	triggerElement: '.product-info',
-	// triggerHook: 0.7,
+	triggerHook: 0.7,
 	duration: 0,
 	offset: 100,
-	// reverse: true,
+	reverse: false,
 })
 	.setTween(featureTl)
 	// .addIndicators()
@@ -52,7 +52,7 @@ const overlapSection = new ScrollMagic.Scene({
 	triggerHook: 1,
 	duration: 0,
 	offset: 150,
-	// reverse: true,
+	reverse: false,
 })
 	.setTween(overlapTl)
 	// .addIndicators()
