@@ -4,6 +4,13 @@
 	padding: 6px 0;
 	position: relative;
 }
+.site-header__position {
+	position: absolute;
+	/* top:0; */
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .site-header__logo-wrapper a img.logo {
 	width: 120px;
 	max-width: 100%;
