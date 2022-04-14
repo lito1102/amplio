@@ -116,6 +116,14 @@
 	}
 }
 
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
 /***====== DROP DOWN/MEGAMENU STYLES ====== ***/
 .site-nav--is-megamenu.site-nav__item {
 	position: static;
@@ -153,4 +161,52 @@
 .megamenu__list > .nav-dropdown__list-item > a {
 	padding-left: 0;
 	font-size: 1.2rem;
+}
+
+/* MOBILE NAVIGATION STYLES */
+.site-mobile-nav {
+	position: absolute;
+	top: 51px;
+	left: 0;
+	width: 0;
+	height: 100vh;
+	background-color: #0000c5;
+	z-index: 10;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.site-mobile-nav__display {
+	width: 100%;
+	opacity: 1;
+	transition: all 0.5s ease-in;
+}
+
+.site-mobile-nav__closeNavBtn {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	padding-right: 5%;
+}
+
+.site-mobile-nav__navigation {
+	display: inline-block;
+	position: absolute;
+	top: 90px;
+	left: 5%;
+	width: 90%;
+	overflow: hidden;
+}
+
+.site-mobile-nav__link {
+	padding: 0.7em 0 0.7em 0.7em;
+	font-size: 1.6rem;
+	background-color: #0000c5;
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+
+.site-mobile-nav__list-item:not(:last-child) {
+	border-bottom: solid 1px #fff;
 }

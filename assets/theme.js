@@ -1,3 +1,31 @@
+// FIXED HEADER/STICKY HEADER
+const fixedHeader = document.querySelector('.fixed-header');
+const height = fixedHeader.offsetTop;
+
+window.addEventListener('scroll', function () {
+	if (window.pageYOffset > height) {
+		fixedHeader.classList.add('fixed');
+	} else {
+		fixedHeader.classList.remove('fixed');
+	}
+});
+
+// MOBILE NAVIGATION FUNCIONALITY.
+const openNavBtn = document.querySelector('#openNavBtn');
+const bodyScroll = document.querySelector('body');
+const siteMobileNav = document.querySelector('.site-mobile-nav');
+const closeNavBtn = document.querySelector('#closeNavBtn');
+
+openNavBtn.addEventListener('click', () => {
+	siteMobileNav.classList.add('site-mobile-nav__display');
+	bodyScroll.classList.add('scroll-y');
+});
+
+closeNavBtn.addEventListener('click', () => {
+	siteMobileNav.classList.remove('site-mobile-nav__display');
+	bodyScroll.classList.remove('scroll-y');
+});
+
 // HERO SECTION ANIMATION
 const tl = gsap.timeline({ defaults: { ease: 'power4.inOut', duration: 2 } });
 

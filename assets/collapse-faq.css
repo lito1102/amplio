@@ -1,0 +1,38 @@
+.faq {
+  width: 100%;
+  padding: 8em 0
+}
+
+.faq__grid-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em
+}
+
+.faq__grid-item>p {
+  font-size: 1.6rem;
+  color: var(--primary-dark-text);
+  letter-spacing: .1em
+}
+
+.faq--main-faq h2 button.faq-heading {
+  font-size: 1.6rem;
+  color: var(--primary-dark-text);
+  letter-spacing: .1em
+}
+
+@media(min-width: 1024px) {
+  .faq__grid-parent {
+    grid-template-columns: 1fr 2fr
+  }
+
+  .faq__grid-item>p {
+    font-size: 1.8rem
+  }
+
+  .faq--main-faq h2 button.faq-heading {
+    font-size: 2rem
+  }
+}

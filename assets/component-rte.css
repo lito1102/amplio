@@ -12,6 +12,12 @@
   margin-bottom: 0;
 }
 
+.rte > p {
+  font-size: 1.5rem;
+  letter-spacing: .1em;
+  color: var(--primary-dark-text);
+}
+
 .rte table {
   table-layout: fixed;
 }
