@@ -1,8 +1,3 @@
-/* .hero__position{
-	position: absolute;
-	top:0;
-	left: 0;
-} */
 .hero {
 	width: 100%;
 	height: 100vh;
@@ -48,7 +43,7 @@
 }
 .hero__heading {
 	font-size: 5rem;
-	line-height: 1.1em;
+	line-height: 1.2em;
 	color: var(--primary-light);
 	clip-path: polygon(0%, 100% 100%, 100%, 100%, 100%, 0%, 100%);
 	transform: translateY(10rem);
