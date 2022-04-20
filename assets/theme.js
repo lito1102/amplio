@@ -121,7 +121,7 @@ const promotionSection = new ScrollMagic.Scene({
 	.addTo(homeController);
 
 // MEGAMENU ANIMATION
-const linkAnimate = document.querySelector('.megamenu-animate');
+const itemAnimate = document.querySelector('.megamenu-animate');
 const megamenu = document.querySelector('.megamenu');
 
 let megamenuTl = gsap.timeline();
@@ -129,10 +129,10 @@ let megamenuTl = gsap.timeline();
 megamenuTl.paused(true);
 megamenuTl.fromTo('.megamenu-grid-column-animate', { y: 30, opacity: 0 }, { y: 0, duration: 1, opacity: 1, stagger: 0.2 });
 
-linkAnimate.addEventListener('mouseover', () => {
+itemAnimate.addEventListener('mouseover', () => {
 	megamenuTl.play();
 });
 
-megamenu.addEventListener('mouseleave', () => {
+itemAnimate.addEventListener('mouseleave', () => {
 	megamenuTl.reverse(0.7);
 });

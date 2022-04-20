@@ -42,6 +42,27 @@
 			},
 			{
 				"type": "color",
+				"id": "nav_color_links",
+				"default": "#ffffff",
+				"label": "Navigation link color",
+				"info": "Set the color of the links in your nav bar."
+			},
+			{
+				"type": "color",
+				"id": "nav_color_links_hover",
+				"default": "#121212",
+				"label": "Navigation link color",
+				"info": "Set the color of the links in your nav bar."
+			},
+			{
+				"type": "color",
+				"id": "sticky_nav_color_links",
+				"default": "#121212",
+				"label": "Color links on sticky navigation.",
+				"info": "Set the color of the links in your nav bar when sticky."
+			},
+			{
+				"type": "color",
 				"id": "colors_solid_button_labels",
 				"default": "#FFFFFF",
 				"label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",

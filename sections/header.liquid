@@ -29,6 +29,14 @@
     width: 100%;
     transition: all .3s ease-in;
   }
+
+  .fixed header nav ul > li > a{
+    color: var(--header-sticky-nav-links);
+  }
+
+  .fixed header nav ul > li > a span.site-nav__down-arrow{
+    color: var(--header-sticky-nav-links);
+  }
   
 </style>
 
@@ -68,8 +76,8 @@
                       {%- for link in section.settings.menu.links -%}
                         {%- if settings.mega_title == link.title -%}
                           <!-- REGULAR LINK WITH A DROPDOWN MEGAMENU LEFT SIDE -->
-                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu">
-                            <a href="/" class="site-nav__link site-nav__link--has-dropdown megamenu-animate">
+                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu megamenu-animate">
+                            <a href="/" class="site-nav__link site-nav__link--has-dropdown">
                               {{ link.title | escape }} <span class="site-nav__down-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                             <!-- Megamenu START -->
@@ -189,8 +197,8 @@
                       {%- for link in section.settings.menu_2.links -%}
                         {%- if settings.mega_title == link.title -%}
                           <!-- REGULAR LINK WITH A DROPDOWN MEGAMENU LEFT SIDE -->
-                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu">
-                            <a href="/" class="site-nav__link site-nav__link--has-dropdown megamenu-animate">
+                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu megamenu-animate">
+                            <a href="/" class="site-nav__link site-nav__link--has-dropdown">
                               {{ link.title | escape }} <span class="site-nav__down-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                             <!-- Megamenu START -->
@@ -580,6 +588,15 @@
         width: 100%;
         transition: all .3s ease-in;
       }
+
+      .fixed header nav ul > li > a{
+        color: var(--header-sticky-nav-links);
+      }
+
+      .fixed header nav ul > li > a span.site-nav__down-arrow{
+        color: var(--header-sticky-nav-links);
+      }
+
     </style>
 
     <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -639,8 +656,8 @@
                       {%- for link in section.settings.menu.links -%}
                         {%- if settings.mega_title == link.title -%}
                           <!-- REGULAR LINK WITH A DROPDOWN MEGAMENU LEFT SIDE -->
-                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu">
-                            <a href="/" class="site-nav__link site-nav__link--has-dropdown megamenu-animate">
+                          <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu megamenu-animate">
+                            <a href="/" class="site-nav__link site-nav__link--has-dropdown">
                               {{ link.title | escape }} <span class="site-nav__down-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                             <!-- Megamenu START -->
@@ -1035,7 +1052,16 @@
     .fixed-header{
       width: 100%;
       transition: all .3s ease-in;
-      }
+    }
+
+    .fixed header nav ul > li > a{
+      color: var(--header-sticky-nav-links);
+    }
+
+    .fixed header nav ul > li > a span.site-nav__down-arrow{
+      color: var(--header-sticky-nav-links);
+    }
+    
   </style>
 
   <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -1093,8 +1119,8 @@
                       {%- for link in section.settings.menu.links -%}
                       {%- if settings.mega_title == link.title -%}
                       <!-- REGULAR LINK WITH A DROPDOWN MEGAMENU LEFT SIDE -->
-                      <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu">
-                        <a href="/" class="site-nav__link site-nav__link--has-dropdown megamenu-animate">
+                      <li class="site-nav__item site-nav__has-dropdown site-nav--is-megamenu megamenu-animate">
+                        <a href="/" class="site-nav__link site-nav__link--has-dropdown">
                           {{ link.title | escape }} <span class="site-nav__down-arrow"><i
                               class="bi bi-chevron-down"></i></span>
                         </a>
