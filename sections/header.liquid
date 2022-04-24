@@ -30,12 +30,24 @@
     transition: all .3s ease-in;
   }
 
-  .fixed header nav ul > li > a{
+  .fixed header nav ul > li > a.site-nav__link, .fixed header nav ul > li > .site-nav__link {
     color: var(--header-sticky-nav-links);
   }
 
-  .fixed header nav ul > li > a span.site-nav__down-arrow{
+  .fixed header .header__icon .icon{
     color: var(--header-sticky-nav-links);
+  }
+
+  .fixed header nav ul > li > a.site-nav__link span.site-nav__down-arrow{
+    color: var(--header-sticky-nav-links);
+  }
+
+  .theme-mobile-menu{
+    fill: var(--header-nav-links);
+  }
+
+  .fixed header .theme-mobile-menu{
+    fill: var(--header-sticky-nav-links);
   }
   
 </style>
@@ -89,52 +101,6 @@
                               {%- when 'megamenu-style-2' -%}
                                 {%- render 'megamenu-style-2' -%}
                             {%- endcase -%}
-
-                            {% comment %}
-                              <div class="nav-dropdown text-left megamenu">
-                                <div>
-                                  <div class="container">
-                                    <div class="row">
-                                      
-                                        {%- for block in section.blocks -%}
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
-                                          <a href="{{ block.settings.mega_menu_img_link }}" class="megamenu__collection-img">
-                                            {%- if block.settings.mega_menu_image != blank -%}
-                                              <img
-                                                srcset="{%- if block.settings.mega_menu_image.width >= 165 -%}{{ block.settings.mega_menu_image | img_url: '165x' }} 165w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 360 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 360w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 535 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 535w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 750 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 750w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 2000 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 2000w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 2040 -%}{{ block.settings.mega_menu_image | img_url: '2040x' }} 2040w,{%- endif -%}"
-                                                src="{{ block.settings.mega_menu_image | img_url: 'master' }}"
-                                                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                                alt="{{ section.settings.image.alt | escape }}" loading="lazy"
-                                                width="{{ section.settings.image.width }}">
-                                            {%- else -%}
-                                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                                            {%- endif -%}
-                                          </a>
-                                          <h5 class="megamenu__collection-heading py-3">
-                                            <a href="{{ block.settings.mega_menu_heading_link }}">{{ block.settings.mega_menu_column_heading }}</a>
-                                          </h5>
-                                          <ul class="megamenu__list text-left nav-dropdown__list">
-                                            {%- for link in block.settings.mega_menu_links.links -%}
-                                              <li class="nav-dropdown__list-item">
-                                                <a href="{{ link.url }}" class="nav-dropdown__link">
-                                                  {{ link.title }}
-                                                </a>
-                                              </li>
-                                            {%- endfor -%}
-                                          </ul>
-                                        </div>
-                                        {%- endfor -%}
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            {% endcomment %}
 
                             <!-- Megamenu END -->
                           </li>
@@ -211,51 +177,6 @@
                                 {%- render 'megamenu-style-2' -%}
                             {%- endcase -%}
 
-                            {% comment %}
-                              <div class="nav-dropdown text-left megamenu">
-                                <div>
-                                  <div class="container">
-                                    <div class="row">
-                                      
-                                        {%- for block in section.blocks -%}
-                                        <div class="col-sm-3 col-md-3 col-lg-3">
-                                          <a href="{{ block.settings.mega_menu_img_link }}" class="megamenu__collection-img">
-                                            {%- if block.settings.mega_menu_image != blank -%}
-                                              <img
-                                                srcset="{%- if block.settings.mega_menu_image.width >= 165 -%}{{ block.settings.mega_menu_image | img_url: '165x' }} 165w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 360 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 360w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 535 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 535w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 750 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 750w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 2000 -%}{{ block.settings.mega_menu_image | img_url: 'master' }} 2000w,{%- endif -%}
-                                                {%- if block.settings.mega_menu_image.width >= 2040 -%}{{ block.settings.mega_menu_image | img_url: '2040x' }} 2040w,{%- endif -%}"
-                                                src="{{ block.settings.mega_menu_image | img_url: 'master' }}"
-                                                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                                                alt="{{ section.settings.image.alt | escape }}" loading="lazy"
-                                                width="{{ section.settings.image.width }}">
-                                            {%- else -%}
-                                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                                            {%- endif -%}
-                                          </a>
-                                          <h5 class="megamenu__collection-heading py-3">
-                                            <a href="{{ block.settings.mega_menu_heading_link }}">{{ block.settings.mega_menu_column_heading }}</a>
-                                          </h5>
-                                          <ul class="megamenu__list text-left nav-dropdown__list">
-                                            {%- for link in block.settings.mega_menu_links.links -%}
-                                              <li class="nav-dropdown__list-item">
-                                                <a href="{{ link.url }}" class="nav-dropdown__link">
-                                                  {{ link.title }}
-                                                </a>
-                                              </li>
-                                            {%- endfor -%}
-                                          </ul>
-                                        </div>
-                                        {%- endfor -%}
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            {% endcomment %}
                             <!-- Megamenu END -->
                           </li>
     
@@ -400,9 +321,9 @@
               <div class="row mx-auto">
                 <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                   <span>
-                    <button type="button" id="openNavBtn">
-                      <span class="site-nav__search" style="color: black;">
-                        <i class="bi bi-list"></i>
+                    <button type="button" id="openNavBtn" class="theme-mobile-menu">
+                      <span>
+                        {% render 'theme-hamburger-menu' %}
                       </span>
                     </button>
                   </span>
@@ -520,9 +441,9 @@
 
         <!-- MOBILE NAVIGATION DISPLAY -->
         <div class="site-mobile-nav">
-          <button type="button" class="site-mobile-nav__closeNavBtn closeBtn" id="closeNavBtn">
-            <span class="site-mobile-nav__close" style="color: #fff; font-size: 3rem;">
-              <i class="bi bi-x-lg"></i>
+          <button type="button" class="site-mobile-nav__closeNavBtn closeBtn close-fill" id="closeNavBtn">
+            <span class="site-mobile-nav__close">
+              {% render 'close' %}
             </span>
           </button>
           <nav class="site-mobile-nav__navigation">
@@ -593,8 +514,20 @@
         color: var(--header-sticky-nav-links);
       }
 
+      .fixed header .header__icon .icon{
+      color: var(--header-sticky-nav-links);
+      }
+
       .fixed header nav ul > li > a span.site-nav__down-arrow{
         color: var(--header-sticky-nav-links);
+      }
+
+      .theme-mobile-menu{
+        fill: var(--header-nav-links);
+      }
+
+      .fixed header .theme-mobile-menu{
+        fill: var(--header-sticky-nav-links);
       }
 
     </style>
@@ -864,9 +797,9 @@
               <div class="row mx-auto">
                 <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                   <span>
-                    <button type="button" id="openNavBtn">
-                      <span class="site-nav__search" style="color: black;">
-                        <i class="bi bi-list"></i>
+                    <button type="button" id="openNavBtn" class="theme-mobile-menu">
+                      <span>
+                        {% render 'theme-hamburger-menu' %}
                       </span>
                     </button>
                   </span>
@@ -984,9 +917,9 @@
 
         <!-- MOBILE NAVIGATION DISPLAY -->
         <div class="site-mobile-nav">
-          <button type="button" class="site-mobile-nav__closeNavBtn closeBtn" id="closeNavBtn">
-            <span class="site-mobile-nav__close" style="color: #fff; font-size: 3rem;">
-              <i class="bi bi-x-lg"></i>
+          <button type="button" class="site-mobile-nav__closeNavBtn closeBtn close-fill" id="closeNavBtn">
+            <span class="site-mobile-nav__close">
+              {% render 'close' %}
             </span>
           </button>
           <nav class="site-mobile-nav__navigation">
@@ -1058,8 +991,20 @@
       color: var(--header-sticky-nav-links);
     }
 
+    .fixed header .header__icon .icon{
+      color: var(--header-sticky-nav-links);
+    }
+
     .fixed header nav ul > li > a span.site-nav__down-arrow{
       color: var(--header-sticky-nav-links);
+    }
+
+    .theme-mobile-menu{
+      fill: var(--header-nav-links);
+    }
+
+    .fixed header .theme-mobile-menu{
+      fill: var(--header-sticky-nav-links);
     }
     
   </style>
@@ -1339,9 +1284,9 @@
                 <div class="row mx-auto">
                   <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                     <span>
-                      <button type="button" id="openNavBtn">
-                        <span class="site-nav__search" style="color: black;">
-                          <i class="bi bi-list"></i>
+                      <button type="button" id="openNavBtn" class="theme-mobile-menu">
+                        <span>
+                          {% render 'theme-hamburger-menu' %}
                         </span>
                       </button>
                     </span>
@@ -1474,9 +1419,9 @@
     
           <!-- MOBILE NAVIGATION DISPLAY -->
           <div class="site-mobile-nav">
-            <button type="button" class="site-mobile-nav__closeNavBtn closeBtn" id="closeNavBtn">
-              <span class="site-mobile-nav__close" style="color: #fff; font-size: 3rem;">
-                <i class="bi bi-x-lg"></i>
+            <button type="button" class="site-mobile-nav__closeNavBtn closeBtn close-fill" id="closeNavBtn">
+              <span class="site-mobile-nav__close">
+                {% render 'close' %}
               </span>
             </button>
             <nav class="site-mobile-nav__navigation">

@@ -76,15 +76,15 @@
 	display: inline-block;
 	font-size: 1.2rem;
 	letter-spacing: 0.1em;
-	color: var(--primary-dark-text);
-	border: solid 1px var(--primary-bg-btn);
+	color: var(--theme-button-color-text);
+	border: solid var(--buttons-border-width) var(--theme-button-border-color);
 	border-radius: var(--buttons-radius);
-	background-color: var(--primary-bg-btn);
+	background-color: var(--theme-button-background-color);
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
 .site-cta:hover {
-	border: solid 1px var(--primary-bg-btn-hover);
+	border: solid var(--buttons-border-width) var(--theme-button-border-color);
 	background-color: var(--primary-bg-btn-hover);
 	color: inherit;
 }
@@ -102,6 +102,9 @@
 	}
 }
 @media (min-width: 1024px) {
+	.hero__content{
+		top: 62%;
+	}
 	.hero__heading {
 		font-size: 9rem;
 	}

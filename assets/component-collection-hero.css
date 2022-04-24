@@ -21,6 +21,7 @@
 }
 
 .collection-hero__text-wrapper {
+  margin-top: 4em;
   flex-basis: 100%;
 }
 

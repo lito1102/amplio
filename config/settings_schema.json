@@ -43,7 +43,7 @@
 			{
 				"type": "color",
 				"id": "nav_color_links",
-				"default": "#ffffff",
+				"default": "#121212",
 				"label": "Navigation link color",
 				"info": "Set the color of the links in your nav bar."
 			},
@@ -51,8 +51,8 @@
 				"type": "color",
 				"id": "nav_color_links_hover",
 				"default": "#121212",
-				"label": "Navigation link color",
-				"info": "Set the color of the links in your nav bar."
+				"label": "Navigation link color on hover",
+				"info": "Set the color of the links on hover."
 			},
 			{
 				"type": "color",
@@ -60,6 +60,24 @@
 				"default": "#121212",
 				"label": "Color links on sticky navigation.",
 				"info": "Set the color of the links in your nav bar when sticky."
+			},
+			{
+				"type": "color",
+				"id": "cta_background_color",
+				"default": "#20efa1",
+				"label": "Theme background color buttons."
+			},
+			{
+				"type": "color",
+				"id": "color_cta_border",
+				"default": "#1cd692",
+				"label": "Theme button border color."
+			},
+			{
+				"type": "color",
+				"id": "color_cta_text",
+				"default": "#121212",
+				"label": "Theme button text color."
 			},
 			{
 				"type": "color",

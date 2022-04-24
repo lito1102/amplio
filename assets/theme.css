@@ -1,9 +1,6 @@
 /* @import 'https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap'; */
 :root {
-	/* --font-heading-family: 'Fjalla One', sans-serif;
-	--font-body-family: 'Merriweather Sans', sans-serif;
-	--font-body-wight: 400; */
 	--primary-dark: #000;
 	--primary-light: #fff;
 	--placeholder-bg: #d4d4d4;
@@ -340,10 +337,6 @@ h1.section-heading--aligned-center {
 	display: inline-block;
 	font-size: 1.2rem;
 	letter-spacing: 0.1em;
-	color: var(--primary-dark-text);
-	border: 1px solid var(--primary-bg-btn);
-	border-radius: var(--buttons-radius);
-	background-color: var(--primary-bg-btn);
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }

@@ -1,7 +1,7 @@
 .customer:not(.account):not(.order) {
   margin: 6rem auto 9rem;
   max-width: 33.4rem;
-  padding: 0 1.5rem;
+  padding: 4rem 1.5rem;
   text-align: center;
 }
 

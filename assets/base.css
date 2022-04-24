@@ -2332,6 +2332,7 @@ input[type='checkbox'] {
 .header__icon .icon {
 	height: 2rem;
 	width: 2rem;
+	color: var(--header-nav-links);
 	fill: none;
 	vertical-align: middle;
 }

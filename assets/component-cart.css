@@ -16,6 +16,7 @@ cart-items.is-empty .title-wrapper-with-link,
 }
 
 .cart__warnings {
+  margin-top: 2em;
   display: none;
   text-align: center;
   padding: 3rem 0 1rem;

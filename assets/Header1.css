@@ -217,9 +217,13 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 
 .site-mobile-nav__closeNavBtn {
 	position: absolute;
-	top: 5px;
+	top: 1%;
 	right: 0;
-	padding-right: 5%;
+	padding-right: 2%;
+}
+
+.close-fill{
+	fill: #ffffff;
 }
 
 .site-mobile-nav__navigation {
