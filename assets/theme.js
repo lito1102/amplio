@@ -26,6 +26,21 @@ closeNavBtn.addEventListener('click', () => {
 	bodyScroll.classList.remove('scroll-y');
 });
 
+// DISPLAY CONTENT OF MOBILE NAVIGATION ITEM.
+const openMobileItem = document.querySelector('.site-mobile-nav--plus');
+const displayMobileItem = document.querySelector('.mobile-menu-dropdown__wrapper');
+const closeMobileItem = document.querySelector('.mobile-nav-btn-item--close');
+
+openMobileItem.addEventListener('click', () => {
+	displayMobileItem.classList.add('mobile-nav-item--display');
+});
+
+closeMobileItem.addEventListener('click', (e) => {
+	if (e.target.classList.contains('mobile-nav-btn-item--close')) {
+		displayMobileItem.classList.remove('mobile-nav-item--display');
+	}
+});
+
 // HERO SECTION ANIMATION
 const tl = gsap.timeline({ defaults: { ease: 'power4.inOut', duration: 2 } });
 

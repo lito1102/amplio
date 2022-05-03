@@ -2,7 +2,7 @@
 
 <section class="single-product">
   <div class="container">
-    <h1 class="section-heading section-heading--aligned-{{ section.settings.content_alignment }}">
+    <h1 class="section-heading-title {{ section.settings.heading_size }} section-heading--aligned-{{ section.settings.content_alignment }}">
     {{ section.settings.collection_section_title }}
     </h1>
     <div class="single-product__grid single-product__grid-parent">
@@ -59,6 +59,26 @@
       "id": "collection_section_title",
       "label": "Collection section title",
       "default": "FAVORITE BOARDS"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
       },
       {
         "type": "select",

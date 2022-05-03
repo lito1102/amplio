@@ -43,8 +43,7 @@
   margin-top: .2em
 }
 
-h1.section-heading {
-  font-size: 2.4rem;
+.section-heading-title {
   line-height: 2.5em;
   color: var(--primary-dark-text)
 }

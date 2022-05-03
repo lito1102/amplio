@@ -1,8 +1,14 @@
 {{ 'collection-group.css' | asset_url | stylesheet_tag }}
 
+<style>
+  section.grid-collection{
+    background-color: {{ section.settings.section_bg_color }};
+  }
+</style>
+
 <section class="grid-collection">
   <div class="container">
-    <h1 class="section-heading section-heading--{{ section.settings.section_heading_alignment }}">{{ section.settings.section_heading }}</h1>
+    <h1 class="{{ section.settings.heading_size }} section-heading--{{ section.settings.section_heading_alignment }} section-heading-title">{{ section.settings.section_heading }}</h1>
     <div class="grid-collection__grid-parent">
       {%- for block in section.blocks -%}
       <div class="grid-collection__grid-item">
@@ -50,6 +56,26 @@
       },
       {
         "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "select",
         "id": "section_heading_alignment",
         "options": [
           {
@@ -63,6 +89,12 @@
         ],
         "default": "aligned-center",
         "label": "Section title alignment"
+      },
+      {
+        "type": "color",
+        "id": "section_bg_color",
+        "label": "Section background color.",
+        "default": "#f4f4f4"
       }
     ],
     "blocks": [

@@ -317,8 +317,8 @@
         <div class="site-header__mobile">
           <div class="site-header__mobile mobile-header">
             <div class="container">
-
               <div class="row mx-auto">
+
                 <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                   <span>
                     <button type="button" id="openNavBtn" class="theme-mobile-menu">
@@ -448,26 +448,30 @@
           </button>
           <nav class="site-mobile-nav__navigation">
             <ul class="site-mobile-nav__list">
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  SHOP
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  DESIGN DECKS
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  LATEST BOARDS
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  GEAR AND PARTS
-                </a>
-              </li>
+            {%- if section.settings.menu != blank -%}
+              {%- for link in section.settings.mobile_menu.links -%}
+                {%- if link.links != blank -%}
+                  <li class="site-mobile-nav__list-item">
+                    <button type="button" class="mobile-nav-btn-item mobile-nav-btn-item--close" style="color: #fff;">
+                      <span class="site-mobile-nav--text">{{ link.title }}</span>
+                      <span class="site-mobile-nav--plus">{% render 'icon-plus' %}</span>
+                    </button>
+
+                    <div class="mobile-menu-dropdown__wrapper">
+                      {% for childlink in link.links %}
+                        <div>{{ childlink.title | escape }}</div>
+                      {% endfor %} 
+                    </div> 
+                  </li>
+                  {%- else -%}
+                    <li class="site-mobile-nav__list-item">
+                      <a href="{{ link.url }}" class="site-mobile-nav__link">
+                        {{ link.title | escape }}
+                      </a>
+                    </li>
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
             </ul>
           </nav>
         </div>
@@ -793,8 +797,8 @@
         <div class="site-header__mobile">
           <div class="site-header__mobile mobile-header">
             <div class="container">
-
               <div class="row mx-auto">
+
                 <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                   <span>
                     <button type="button" id="openNavBtn" class="theme-mobile-menu">
@@ -924,26 +928,15 @@
           </button>
           <nav class="site-mobile-nav__navigation">
             <ul class="site-mobile-nav__list">
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  SHOP
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  DESIGN DECKS
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  LATEST BOARDS
-                </a>
-              </li>
-              <li class="site-mobile-nav__list-item">
-                <a href="#" class="site-mobile-nav__link">
-                  GEAR AND PARTS
-                </a>
-              </li>
+              {%- if section.settings.menu != blank -%}
+                {%- for link in section.settings.mobile_menu.links -%}
+                  <li class="site-mobile-nav__list-item">
+                    <a href="{{ link.url }}" class="site-mobile-nav__link">
+                      {{ link.title | escape }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              {%- endif -%}
             </ul>
           </nav>
         </div>
@@ -1280,8 +1273,8 @@
           <div class="site-header__mobile">
             <div class="site-header__mobile mobile-header">
               <div class="container">
-    
                 <div class="row mx-auto">
+
                   <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
                     <span>
                       <button type="button" id="openNavBtn" class="theme-mobile-menu">
@@ -1426,26 +1419,15 @@
             </button>
             <nav class="site-mobile-nav__navigation">
               <ul class="site-mobile-nav__list">
-                <li class="site-mobile-nav__list-item">
-                  <a href="#" class="site-mobile-nav__link">
-                    SHOP
-                  </a>
-                </li>
-                <li class="site-mobile-nav__list-item">
-                  <a href="#" class="site-mobile-nav__link">
-                    DESIGN DECKS
-                  </a>
-                </li>
-                <li class="site-mobile-nav__list-item">
-                  <a href="#" class="site-mobile-nav__link">
-                    LATEST BOARDS
-                  </a>
-                </li>
-                <li class="site-mobile-nav__list-item">
-                  <a href="#" class="site-mobile-nav__link">
-                    GEAR AND PARTS
-                  </a>
-                </li>
+                {%- if section.settings.menu != blank -%}
+                  {%- for link in section.settings.mobile_menu.links -%}
+                    <li class="site-mobile-nav__list-item">
+                      <a href="{{ link.url }}" class="site-mobile-nav__link">
+                        {{ link.title | escape }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                {%- endif -%}
               </ul>
             </nav>
           </div>
