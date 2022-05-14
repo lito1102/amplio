@@ -202,7 +202,7 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 	left: 0;
 	width: 0;
 	height: 100vh;
-	background-color: #0000c5;
+	background-color: #121212;
 	z-index: 10;
 	overflow: scroll;
 	opacity: 0;
@@ -229,16 +229,15 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 .site-mobile-nav__navigation {
 	display: inline-block;
 	position: absolute;
-	top: 90px;
+	top: 50px;
 	left: 5%;
 	width: 90%;
-	overflow: hidden;
 }
 
 .site-mobile-nav__link {
 	padding: 0.7em 0 0.7em 0.7em;
 	font-size: 1.6rem;
-	background-color: #0000c5;
+	/* background-color: #0000c5; */
 	color: #fff;
 	letter-spacing: 0.1em;
 }
@@ -260,17 +259,13 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 	align-items: center;
 	justify-content: space-between;
 	padding: .7em;
+	letter-spacing: .1em;
 }
 
 .mobile-menu-dropdown__wrapper{
 	width: 100%;
 	height: 100%;
 	margin-bottom: 1em;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	justify-content: center;
-	gap: 1em;
 	padding-left: 1%;
 	display: none;
 }
@@ -279,10 +274,9 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 	display: inline-grid;
 }
 
-.mobile-menu-dropdown__wrapper > div{
-	padding: 1rem 0;
-	background-color: goldenrod;
-	border: solid 1px red;
-	border-radius: 6px;
-	aspect-ratio: 1 / 1;
+.mobile-menu-dropdown__wrapper > li > a{
+	color: #ffffff;
+	padding-left: 5%;
+	padding-bottom: .6em;
+	letter-spacing: .1em;
 }

@@ -457,11 +457,18 @@
                       <span class="site-mobile-nav--plus">{% render 'icon-plus' %}</span>
                     </button>
 
-                    <div class="mobile-menu-dropdown__wrapper">
-                      {% for childlink in link.links %}
-                        <div>{{ childlink.title | escape }}</div>
-                      {% endfor %} 
-                    </div> 
+                    
+                      <ul class="mobile-menu-dropdown__wrapper">
+                        {% for childlink in link.links %}
+                        <li>
+                          <a href="{{ childlink.url }}">
+                            {{ childlink.title | escape }}
+                          </a>
+                        </li>
+                        {% endfor %} 
+                      </ul>
+                      
+                    
                   </li>
                   {%- else -%}
                     <li class="site-mobile-nav__list-item">
@@ -472,6 +479,25 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
+            </ul>
+
+            <ul style="display: flex; align-items: center; justify-content: center;">
+              <li>
+                {%- if shop.customer_accounts_enabled -%}
+                  <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" style="color: #fff;">
+                    SIGN IN | CREATE YOUR ACCOUNT
+                    <span class="visually-hidden">
+                      {%- liquid
+                      if customer
+                      echo 'customer.account_fallback' | t
+                      else
+                      echo 'customer.log_in' | t
+                      endif
+                      -%}
+                    </span>
+                  </a>
+                {%- endif -%}
+              </li>
             </ul>
           </nav>
         </div>

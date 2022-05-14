@@ -87,19 +87,6 @@
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
 }
-.cta-style::after{
-		content: '';
-		display: block;
-		width: 106px;
-		height: 41px;
-		position: absolute;
-		top: 1px;
-		left: 2px;
-		border: solid var(--buttons-border-width) #121212;
-		border-radius: var(--buttons-radius);
-		background-color: #121212;
-		z-index: -1;
-}
 .site-cta:hover {
 	border: solid var(--buttons-border-width) var(--theme-button-border-color);
 	background-color: var(--primary-bg-btn-hover);

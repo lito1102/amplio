@@ -1,0 +1,27 @@
+.marquee-container {
+  overflow: hidden;
+}
+
+.marquee {
+  margin: 0;
+  display: inline-block;
+}
+
+.marquee-words {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  animation: marquee-keywords 8s linear infinite;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+@keyframes marquee-keywords {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

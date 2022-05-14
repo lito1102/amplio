@@ -15,8 +15,12 @@
   }
 }
 
-.list-payment__item {
+.payment-item {
   align-items: center;
   display: flex;
   padding: 0.5rem;
+}
+
+.payment-item > svg {
+  width: 28px;
 }

@@ -42,7 +42,7 @@
             {% when 'button' %}
             <div class="site-cta-wrapper" style="display: inline-block;">
               {%- if block.settings.button_label != blank -%}
-                <a href="{{ block.settings.button_link }}" class="hero__cta site-cta cta-style" {{ block.shopify_attributes }}>
+                <a href="{{ block.settings.button_link }}" class="hero__cta site-cta" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>              
               {%- endif -%}
