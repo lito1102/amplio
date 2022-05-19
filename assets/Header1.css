@@ -132,7 +132,7 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 
 @media (min-width: 1024px) {
 	.site-nav__link{
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 	.site-header__wrapper {
 		display: block;

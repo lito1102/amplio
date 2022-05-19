@@ -48,6 +48,10 @@ tl.to('h1.hero__heading', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0
 tl.to('p.hero__text', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0 }, '-=1');
 tl.to('.site-cta-wrapper', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0 }, '-=1');
 
+const tlTwo = gsap.timeline({ defaults: { duration: 0.75, easeInOut: 'Power3.easeOut' } });
+
+tlTwo.fromTo('.hero', { scale: 1.5 }, { scale: 1, delay: 0.15, duration: 1.2, ease: 'sin.inOut' });
+
 // SINGLE PRODUCT SECTION ANIMATION
 const productTl = gsap.timeline();
 
