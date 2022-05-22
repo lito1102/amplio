@@ -1,6 +1,24 @@
 {{ 'collection-products.css' | asset_url | stylesheet_tag }}
 
-<section class="single-product">
+{%- style -%}
+  section.single-product{
+    background-color: {{ section.settings.section_bg_color }};
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="single-product section-{{ section.id }}-padding">
   <div class="container">
     <h1 class="section-heading-title {{ section.settings.heading_size }} section-heading--aligned-{{ section.settings.content_alignment }}">
     {{ section.settings.collection_section_title }}
@@ -95,6 +113,32 @@
         ],
         "label": "Section title alignment",
         "default": "center"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 40
+      },
+      {
+        "type": "color",
+        "id": "section_bg_color",
+        "label": "Section background color.",
+        "default": "#ffffff"
       },
       {
         "type": "collection",

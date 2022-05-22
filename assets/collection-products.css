@@ -1,11 +1,9 @@
 .single-product {
-  padding: 8em 0;
   width: 100%;
-  background-color: var(--primary-light)
 }
 
 .section-heading-title{
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   color: var(--primary-dark-text)
 }
 

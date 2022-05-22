@@ -1,7 +1,5 @@
 .grid-collection {
-  padding: 6em 0;
   width: 100%;
-  background-color: #fcfcfc
 }
 
 .grid-collection__grid-parent {
@@ -44,7 +42,7 @@
 }
 
 .section-heading-title {
-  line-height: 2.5em;
+  line-height: 1em;
   color: var(--primary-dark-text)
 }
 

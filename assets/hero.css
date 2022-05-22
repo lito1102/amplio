@@ -73,7 +73,7 @@
 }
 .site-cta {
 	position: relative;
-	width: 100%;
+	/* width: 100%; */
 	margin-top: 1em;
 	padding: 1em 1.6em;
 	line-height: 1.6rem;

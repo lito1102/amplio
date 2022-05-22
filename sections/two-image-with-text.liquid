@@ -1,6 +1,32 @@
 {{ 'two-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<section class="overlap">
+{%- style -%}
+  section.overlap{
+    background-color: {{ section.settings.section_bg_color }};
+  }
+
+  .overlap__item>h1{
+    color: {{ section.settings.section_heading_color }};
+  }
+
+  .overlap__item>p{
+    color: {{ section.settings.section_text_color }};
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="overlap section-{{ section.id }}-padding">
   <div class="container">
     <div class="overlap__container">
       <div class="overlap__item overlap--img-direction-{{ section.settings.content_direction }}">
@@ -108,6 +134,44 @@
         "type": "image_picker",
         "id": "image_2",
         "label": "Image 2"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 40
+      },
+      {
+        "type": "color",
+        "id": "section_bg_color",
+        "label": "Section background color.",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "section_heading_color",
+        "label": "Section heading color.",
+        "default": "#121212"
+      },
+      {
+        "type": "color",
+        "id": "section_text_color",
+        "label": "Section text color.",
+        "default": "#121212"
       }
     ],
     "presets": [

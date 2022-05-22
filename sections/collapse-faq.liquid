@@ -3,6 +3,10 @@
 {{ 'collaps-faq.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  section.faq{
+    background-color: {{ section.settings.section_bg_color }};
+  }
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -302,6 +306,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color.",
+      "default": "#ffffff"
     }
   ],
   "blocks": [
