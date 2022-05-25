@@ -42,7 +42,7 @@
 }
 
 .section-heading-title {
-  line-height: 1em;
+  margin-bottom: 1em;
   color: var(--primary-dark-text)
 }
 
