@@ -49,6 +49,10 @@
   .fixed header .theme-mobile-menu{
     fill: var(--header-sticky-nav-links);
   }
+
+  .site-mobile-nav{
+    background-color: {{ section.settings.mobile_menu_bg_color }};
+  }
   
 </style>
 
@@ -481,7 +485,7 @@
             {%- endif -%}
             </ul>
 
-            <ul style="display: flex; align-items: center; justify-content: center;">
+            <ul style="display: flex; align-items: center; justify-content: center; margin-top: 2rem;">
               <li>
                 {%- if shop.customer_accounts_enabled -%}
                   <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" style="color: #fff;">
@@ -558,6 +562,10 @@
 
       .fixed header .theme-mobile-menu{
         fill: var(--header-sticky-nav-links);
+      }
+
+       .site-mobile-nav{
+        background-color: {{ section.settings.mobile_menu_bg_color }};
       }
 
     </style>
@@ -948,7 +956,7 @@
               {%- endif -%}
             </ul>
         
-            <ul style="display: flex; align-items: center; justify-content: center;">
+            <ul style="display: flex; align-items: center; justify-content: center; margin-top: 2rem;">
               <li>
                 {%- if shop.customer_accounts_enabled -%}
                 <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -1027,6 +1035,10 @@
 
     .fixed header .theme-mobile-menu{
       fill: var(--header-sticky-nav-links);
+    }
+
+     .site-mobile-nav{
+      background-color: {{ section.settings.mobile_menu_bg_color }};
     }
     
   </style>
@@ -1425,7 +1437,7 @@
                 {%- endif -%}
               </ul>
           
-              <ul style="display: flex; align-items: center; justify-content: center;">
+              <ul style="display: flex; align-items: center; justify-content: center; margin-top: 2rem;">
                 <li>
                   {%- if shop.customer_accounts_enabled -%}
                   <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -1558,6 +1570,12 @@
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "color",
+      "id": "mobile_menu_bg_color",
+      "default": "#341f97",
+      "label": "Change mobile nav display background color."
     }
   ],
   "blocks": [

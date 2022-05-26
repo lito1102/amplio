@@ -202,7 +202,6 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 	left: 0;
 	width: 0;
 	height: 100vh;
-	background-color: #121212;
 	z-index: 10;
 	overflow: scroll;
 	opacity: 0;
@@ -237,7 +236,6 @@ li.site-nav__has-dropdown:hover span.site-nav__down-arrow{
 .site-mobile-nav__link {
 	padding: 0.7em 0 0.7em 0.7em;
 	font-size: 1.6rem;
-	/* background-color: #0000c5; */
 	color: #fff;
 	letter-spacing: 0.1em;
 }
