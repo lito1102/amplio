@@ -1,12 +1,15 @@
 .promotional-banner {
   width: 100%;
-  padding: 8em 0
 }
 
 .promotional-banner__wrapper {
   width: 100%;
   background-color: var(--placeholder-bg);
   position: relative
+}
+
+.promotional-section-title{
+  margin-bottom: 1em;
 }
 
 .promotional-banner--height-medium{
