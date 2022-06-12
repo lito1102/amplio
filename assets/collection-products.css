@@ -20,27 +20,28 @@
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   align-items: center;
   justify-content: center;
-  gap: 2em
+  gap: 2em;
 }
 
 .single-product__img-link {
   width: 80%;
   background-color: var(--placeholder-bg);
-  aspect-ratio: 1/1
+  aspect-ratio: 1/1;
 }
 
 .single-product__img-link>img {
-  aspect-ratio: 1/1
+  aspect-ratio: 1/1;
 }
 
 .single-product__content {
-  padding: .4em 0
+  padding: .4em 0;
+  padding-left: 3%;
 }
 
 .single-product__name {
   font-size: 1.4rem;
   width: 100%;
-  color: var(--primary-dark-text)
+  color: var(--primary-dark-text);
 }
 
 .single-product__price {

@@ -75,13 +75,13 @@
 .promotional-banner--left-center {
   top: 40%;
   left: 3%;
-  z-index: 20
+  z-index: 19
 }
 
 .promotional-banner--left-bottom {
   bottom: 8%;
   left: 3%;
-  z-index: 20
+  z-index: 19
 }
 
 .promotional-banner--center {
@@ -89,7 +89,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 20
+  z-index: 19
 }
 
 @media(min-width: 1024px) {
