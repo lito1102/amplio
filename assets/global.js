@@ -926,16 +926,26 @@ class VariantSelects extends HTMLElement {
         const html = new DOMParser().parseFromString(responseText, 'text/html')
         const destination = document.getElementById(`price-${this.dataset.section}`);
         const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        const skuSource = html.getElementById(`Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+        const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
         const variantPickerDestination = document.getElementById(`variant-radios-${this.dataset.section}`) || document.getElementById(`variant-selects-${this.dataset.section}`);
         const variantPickerSource = html.getElementById(`variant-radios-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`) || html.getElementById(`variant-selects-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
 
         if (source && destination) destination.innerHTML = source.innerHTML;
         if (variantPickerSource && variantPickerDestination) variantPickerDestination.innerHTML = variantPickerSource.innerHTML;
+<<<<<<< HEAD
 >>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
+=======
+        if (skuSource && skuDestination) skuDestination.innerHTML = skuSource.innerHTML;
+>>>>>>> 25295d881a18d49db55a06f5aa7c6bc026e77ff4
 
         const price = document.getElementById(`price-${this.dataset.section}`);
+        const sku = document.getElementById(`Sku-${this.dataset.section}`);
 
         if (price) price.classList.remove('visibility-hidden');
+        if (sku && skuSource.innerHTML.length === 0) sku.classList.add('visibility-hidden'), sku.setAttribute('aria-hidden', 'true');
+        if (sku && skuSource.innerHTML.length !== 0) sku.classList.remove('visibility-hidden'), sku.setAttribute('aria-hidden', 'false');
+
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
 <<<<<<< HEAD
 =======
@@ -972,9 +982,12 @@ class VariantSelects extends HTMLElement {
     const addButton = button.querySelector('[name="add"]');
     const addButtonText = button.querySelector('[name="add"] > span');
     const price = document.getElementById(`price-${this.dataset.section}`);
+    const sku = document.getElementById(`Sku-${this.dataset.section}`);
+
     if (!addButton) return;
     addButtonText.textContent = window.variantStrings.unavailable;
     if (price) price.classList.add('visibility-hidden');
+    if (sku) sku.classList.add('visibility-hidden'), sku.setAttribute('aria-hidden', 'true');
   }
 
   getVariantData() {
