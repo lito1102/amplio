@@ -51,7 +51,12 @@
     "slider": {
       "of": "av",
       "next_slide": "Bild till höger",
+<<<<<<< HEAD
       "previous_slide": "Bild till vänster"
+=======
+      "previous_slide": "Bild till vänster",
+      "name": "Bild"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Gå vidare till produktinformation",
     "total_reviews": "totalt antal recensioner",
     "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjärnor",
+<<<<<<< HEAD
     "collapsible_content_title": "Innehåll som kan döljas"
+=======
+    "collapsible_content_title": "Innehåll som kan döljas",
+    "complementary_products": "Kompletterande produkter"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Visa alla uppgifter",
       "include_taxes": "Skatt ingår.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
+      "choose_options": "Välj alternativ",
+      "choose_product_options": "Välj alternativ för {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [Inte tillgänglig]",
+      "variant_sold_out_or_unavailable": "Varianten är slutsåld eller inte tillgänglig"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Mediagalleri"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Tillämpa",
       "clear": "Rensa",
+<<<<<<< HEAD
       "clear_all": "Rensa alla",
+=======
+      "clear_all": "Ta bort alla",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Från",
       "filter_and_sort": "Filtrera och sortera",
       "filter_by_label": "Filter:",
@@ -176,7 +198,14 @@
       "sort_button": "Sortera",
       "sort_by_label": "Sortera efter:",
       "to": "Till",
+<<<<<<< HEAD
       "clear_filter": "Rensa filter"
+=======
+      "clear_filter": "Ta bort filter",
+      "filter_selected_accessibility": "{{ type }} ({{ count }}) filter valda",
+      "show_more": "Visa mer",
+      "show_less": "Visa mindre"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "comment": "Kommentar",
         "send": "Skicka",
         "post_success": "Tack för att du kontaktar oss. Vi återkommer till dig så snart som möjligt.",
+<<<<<<< HEAD
         "error_heading": "Justera följande:"
+=======
+        "error_heading": "Justera följande:",
+        "title": "Kontaktformulär"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +276,12 @@
         "product": "Produkt",
         "price": "Pris",
         "total": "Totalt",
+<<<<<<< HEAD
         "quantity": "Kvantitet"
+=======
+        "quantity": "Kvantitet",
+        "image": "Produktbild"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Uppdatera",
       "login": {
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Visa alla",
+<<<<<<< HEAD
       "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}",
       "slider": "Bild"
+=======
+      "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Visa alla"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Produktserie",
       "empty": "Inga produkter hittades",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla</a>"
+=======
+      "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">ta bort alla</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Ladda video: {{ description }}"
@@ -371,7 +418,11 @@
     },
     "reset_password": {
       "title": "Återställ kontolösenord",
+<<<<<<< HEAD
       "subtext": "Ange ett nytt lösenord för {{ email }}",
+=======
+      "subtext": "Ange ett nytt lösenord",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Lösenord",
       "password_confirm": "Bekräfta lösenordet",
       "submit": "Återställ lösenord"

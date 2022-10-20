@@ -16,7 +16,10 @@ cart-items.is-empty .title-wrapper-with-link,
 }
 
 .cart__warnings {
+<<<<<<< HEAD
   margin-top: 2em;
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   display: none;
   text-align: center;
   padding: 3rem 0 1rem;

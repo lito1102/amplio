@@ -6,11 +6,18 @@ if (!customElements.get('product-form')) {
       this.form = this.querySelector('form');
       this.form.querySelector('[name=id]').disabled = false;
       this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
+<<<<<<< HEAD
       this.cartNotification = document.querySelector('cart-notification');
+=======
+      this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+      this.submitButton = this.querySelector('[type="submit"]');
+      if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
 
     onSubmitHandler(evt) {
       evt.preventDefault();
+<<<<<<< HEAD
       const submitButton = this.querySelector('[type="submit"]');
       if (submitButton.classList.contains('loading')) return;
 
@@ -19,6 +26,14 @@ if (!customElements.get('product-form')) {
 
       submitButton.setAttribute('aria-disabled', true);
       submitButton.classList.add('loading');
+=======
+      if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
+
+      this.handleErrorMessage();
+
+      this.submitButton.setAttribute('aria-disabled', true);
+      this.submitButton.classList.add('loading');
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       this.querySelector('.loading-overlay__spinner').classList.remove('hidden');
 
       const config = fetchConfig('javascript');
@@ -26,8 +41,16 @@ if (!customElements.get('product-form')) {
       delete config.headers['Content-Type'];
 
       const formData = new FormData(this.form);
+<<<<<<< HEAD
       formData.append('sections', this.cartNotification.getSectionsToRender().map((section) => section.id));
       formData.append('sections_url', window.location.pathname);
+=======
+      if (this.cart) {
+        formData.append('sections', this.cart.getSectionsToRender().map((section) => section.id));
+        formData.append('sections_url', window.location.pathname);
+        this.cart.setActiveElement(document.activeElement);
+      }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       config.body = formData;
 
       fetch(`${routes.cart_add_url}`, config)
@@ -35,23 +58,59 @@ if (!customElements.get('product-form')) {
         .then((response) => {
           if (response.status) {
             this.handleErrorMessage(response.description);
+<<<<<<< HEAD
             return;
           }
 
           this.cartNotification.renderContents(response);
+=======
+
+            const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+            if (!soldOutMessage) return;
+            this.submitButton.setAttribute('aria-disabled', true);
+            this.submitButton.querySelector('span').classList.add('hidden');
+            soldOutMessage.classList.remove('hidden');
+            this.error = true;
+            return;
+          } else if (!this.cart) {
+            window.location = window.routes.cart_url;
+            return;
+          }
+
+          this.error = false;
+          const quickAddModal = this.closest('quick-add-modal');
+          if (quickAddModal) {
+            document.body.addEventListener('modalClosed', () => {
+              setTimeout(() => { this.cart.renderContents(response) });
+            }, { once: true });
+            quickAddModal.hide(true);
+          } else {
+            this.cart.renderContents(response);
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         })
         .catch((e) => {
           console.error(e);
         })
         .finally(() => {
+<<<<<<< HEAD
           submitButton.classList.remove('loading');
           submitButton.removeAttribute('aria-disabled');
+=======
+          this.submitButton.classList.remove('loading');
+          if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+          if (!this.error) this.submitButton.removeAttribute('aria-disabled');
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
           this.querySelector('.loading-overlay__spinner').classList.add('hidden');
         });
     }
 
     handleErrorMessage(errorMessage = false) {
       this.errorMessageWrapper = this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
+<<<<<<< HEAD
+=======
+      if (!this.errorMessageWrapper) return;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
 
       this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);

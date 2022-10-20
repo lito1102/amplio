@@ -5,7 +5,11 @@ class CartNotification extends HTMLElement {
     this.notification = document.getElementById('cart-notification');
     this.header = document.querySelector('sticky-header');
     this.onBodyClick = this.handleBodyClick.bind(this);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     this.notification.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelectorAll('button[type="button"]').forEach((closeButton) =>
       closeButton.addEventListener('click', this.close.bind(this))
@@ -25,7 +29,10 @@ class CartNotification extends HTMLElement {
 
   close() {
     this.notification.classList.remove('active');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     document.body.removeEventListener('click', this.onBodyClick);
 
     removeTrapFocus(this.activeElement);

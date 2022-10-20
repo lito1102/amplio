@@ -51,7 +51,12 @@
     "slider": {
       "of": "af",
       "next_slide": "Skub til højre",
+<<<<<<< HEAD
       "previous_slide": "Skub til venstre"
+=======
+      "previous_slide": "Skub til venstre",
+      "name": "Diasshow"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Gå til produktoplysninger",
     "total_reviews": "anmeldelser i alt",
     "star_reviews_info": "{{ rating_value }} ud af {{ rating_max }} stjerner",
+<<<<<<< HEAD
     "collapsible_content_title": "Indhold, der kan skjules"
+=======
+    "collapsible_content_title": "Indhold, der kan skjules",
+    "complementary_products": "Supplerende produkter"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Se komplette oplysninger",
       "include_taxes": "Inklusive skat.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
+      "choose_options": "Vælg muligheder",
+      "choose_product_options": "Vælg muligheder for {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [Utilgængelig]",
+      "variant_sold_out_or_unavailable": "Varianten er udsolgt eller utilgængelig"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Mediegalleri"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Anvend",
       "clear": "Ryd",
+<<<<<<< HEAD
       "clear_all": "Ryd alt",
+=======
+      "clear_all": "Fjern alle",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Fra",
       "filter_and_sort": "Filtrer og sortér",
       "filter_by_label": "Filter:",
@@ -176,7 +198,14 @@
       "sort_button": "Sortér",
       "sort_by_label": "Sortér efter:",
       "to": "Til",
+<<<<<<< HEAD
       "clear_filter": "Ryd filter"
+=======
+      "clear_filter": "Fjern filter",
+      "filter_selected_accessibility": "{{ type }} ({{ count }} filtre er valgt)",
+      "show_more": "Vis mere",
+      "show_less": "Vis mindre"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "comment": "Kommentar",
         "send": "Send",
         "post_success": "Tak for din henvendelse. Vi kontakter dig hurtigst muligt.",
+<<<<<<< HEAD
         "error_heading": "Juster følgende:"
+=======
+        "error_heading": "Juster følgende:",
+        "title": "Kontaktformular"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +276,12 @@
         "product": "Produkt",
         "price": "Pris",
         "total": "I alt",
+<<<<<<< HEAD
         "quantity": "Antal"
+=======
+        "quantity": "Antal",
+        "image": "Produktbillede"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Opdater",
       "login": {
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Se alle",
+<<<<<<< HEAD
       "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}",
       "slider": "Diasshow"
+=======
+      "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Se alle"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Kollektion",
       "empty": "Der blev ikke fundet nogen produkter",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">ryd alt</a>"
+=======
+      "use_fewer_filters_html": "Brug færre filtre, eller <a class=\"{{ class }}\" href=\"{{ link }}\">fjern alle</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Indlæs video: {{ description }}"
@@ -371,7 +418,11 @@
     },
     "reset_password": {
       "title": "Forny adgangskode til konto",
+<<<<<<< HEAD
       "subtext": "Indtast en ny adgangskode for {{ email }}",
+=======
+      "subtext": "Indtast en ny adgangskode",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Adgangskode",
       "password_confirm": "Bekræft adgangskode",
       "submit": "Nulstil adgangskode"

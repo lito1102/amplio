@@ -14,7 +14,11 @@ if (!customElements.get('media-gallery')) {
       this.elements.thumbnails.querySelectorAll('[data-target]').forEach((mediaToSwitch) => {
         mediaToSwitch.querySelector('button').addEventListener('click', this.setActiveMedia.bind(this, mediaToSwitch.dataset.target, false));
       });
+<<<<<<< HEAD
       if (this.dataset.desktopLayout !== 'stacked' && this.mql.matches) this.removeListSemantic();
+=======
+      if (this.dataset.desktopLayout.includes('thumbnail') && this.mql.matches) this.removeListSemantic();
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
 
     onSlideChanged(event) {

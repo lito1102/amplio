@@ -71,6 +71,10 @@
 
   .collection--full-width slider-component:not(.slider-component-desktop) {
     padding: 0 1.5rem;
+<<<<<<< HEAD
+=======
+    max-width: none;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   }
 }
 

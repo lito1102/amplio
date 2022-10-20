@@ -28,8 +28,13 @@ slider-component.slider-component-full-width {
 
 .slider__slide {
   --focus-outline-padding: 0.5rem;
+<<<<<<< HEAD
   --shadow-padding-top: calc(var(--shadow-vertical-offset) * -1 + var(--shadow-blur-radius));
   --shadow-padding-bottom: calc(var(--shadow-vertical-offset) + var(--shadow-blur-radius));
+=======
+  --shadow-padding-top: calc((var(--shadow-vertical-offset) * -1 + var(--shadow-blur-radius)) * var(--shadow-visible));
+  --shadow-padding-bottom: calc((var(--shadow-vertical-offset) + var(--shadow-blur-radius)) * var(--shadow-visible));
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   scroll-snap-align: start;
   flex-shrink: 0;
   padding-bottom: 0;
@@ -47,6 +52,16 @@ slider-component.slider-component-full-width {
     margin-bottom: 1rem;
   }
 
+<<<<<<< HEAD
+=======
+  /* Fix to show some space at the end of our sliders in all browsers */
+  .slider--mobile:after {
+    content: "";
+    width: 0;
+    padding-left: 1.5rem;
+  }
+
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   .slider.slider--mobile .slider__slide {
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
@@ -90,6 +105,17 @@ slider-component.slider-component-full-width {
     margin-bottom: 1rem;
   }
 
+<<<<<<< HEAD
+=======
+  /* Fix to show some space at the end of our sliders in all browsers */
+  .slider--tablet:after {
+    content: "";
+    width: 0;
+    padding-left: 1.5rem;
+    margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
+  }
+
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   .slider.slider--tablet .slider__slide {
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
@@ -136,6 +162,17 @@ slider-component.slider-component-full-width {
     scroll-padding-left: var(--desktop-margin-left-first-item);
   }
 
+<<<<<<< HEAD
+=======
+  /* Fix to show some space at the end of our sliders in all browsers */
+  .slider--desktop:after {
+    content: "";
+    width: 0;
+    padding-left: 5rem;
+    margin-left: calc(-1 * var(--grid-desktop-horizontal-spacing));
+  }
+
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   .slider.slider--desktop .slider__slide {
     margin-bottom: 0;
     padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
@@ -147,10 +184,13 @@ slider-component.slider-component-full-width {
     scroll-margin-left: var(--desktop-margin-left-first-item);
   }
 
+<<<<<<< HEAD
   .slider.slider--desktop .slider__slide:last-child {
     margin-right: 5rem;
   }
 
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   .slider-component-full-width .slider--desktop {
     scroll-padding-left: 1.5rem;
   }
@@ -160,8 +200,14 @@ slider-component.slider-component-full-width {
     scroll-margin-left: 1.5rem;
   }
 
+<<<<<<< HEAD
   .slider-component-full-width .slider--desktop .slider__slide:last-child {
     margin-right: 1.5rem;
+=======
+  /* Fix to show some space at the end of our sliders in all browsers */
+  .slider-component-full-width .slider--desktop:after {
+    padding-left: 1.5rem;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   }
 
   .slider--desktop.grid--5-col-desktop .grid__item {

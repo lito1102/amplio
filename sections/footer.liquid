@@ -51,7 +51,11 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
+<<<<<<< HEAD
             <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+=======
+            <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
@@ -62,7 +66,11 @@
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'link_list' -%}
+<<<<<<< HEAD
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+=======
+                  {%- if block.settings.menu != blank -%}
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
@@ -317,6 +325,7 @@
         {%- endif -%}
       </div>
       <div class="footer__column footer__column--info">
+<<<<<<< HEAD
        {% assign enabled_payment_types = 'visa,master,american_express,paypal,apple_pay,discover, shopify_pay' | remove: ' ' | split: ',' %}
           {%- if section.settings.show_payment_icons -%}
             <ul class="d-flex align-items-center mt-1 payment-list">
@@ -329,6 +338,23 @@
           {%- endif -%}
         <div class="footer__copyright caption">
           <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+=======
+        {%- if section.settings.payment_enable -%}
+          <div class="footer__payment">
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            <ul class="list list-payment" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li class="list-payment__item">
+                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+        <div class="footer__copyright caption">
+          <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+          <small class="copyright__content">{{ powered_by_link }}</small>
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         </div>
       </div>
     </div>
@@ -399,8 +425,12 @@
           "type": "text",
           "id": "heading",
           "default": "Quick links",
+<<<<<<< HEAD
           "label": "t:sections.footer.blocks.link_list.settings.heading.label",
           "info": "t:sections.footer.blocks.link_list.settings.heading.info"
+=======
+          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         {
           "type": "link_list",
@@ -556,7 +586,11 @@
     },
     {
       "type": "checkbox",
+<<<<<<< HEAD
       "id": "show_payment_icons",
+=======
+      "id": "payment_enable",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
     },

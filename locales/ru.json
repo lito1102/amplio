@@ -51,7 +51,12 @@
     "slider": {
       "of": "из",
       "next_slide": "Листать вперед",
+<<<<<<< HEAD
       "previous_slide": "Листать назад"
+=======
+      "previous_slide": "Листать назад",
+      "name": "Ползунок"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Перейти к информации о продукте",
     "total_reviews": "всего отзывов",
     "star_reviews_info": "{{ rating_value }} из {{ rating_max }} звезд",
+<<<<<<< HEAD
     "collapsible_content_title": "Контент, который можно свернуть"
+=======
+    "collapsible_content_title": "Контент, который можно свернуть",
+    "complementary_products": "Дополнительные товары"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -148,7 +158,15 @@
       },
       "view_full_details": "Просмотреть всю информацию",
       "include_taxes": "Сумма налога включена.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
+      "choose_options": "Выберите варианты",
+      "choose_product_options": "Выберите варианты для {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [Недоступно]",
+      "variant_sold_out_or_unavailable": "Вариант распродан или недоступен"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Галерея мультимедиа"
@@ -184,7 +202,14 @@
         "few": "Продуктов: {{ count }}",
         "many": "Продуктов: {{ count }}"
       },
+<<<<<<< HEAD
       "clear_filter": "Удалить фильтр"
+=======
+      "clear_filter": "Снять фильтр",
+      "filter_selected_accessibility": "{{ type }} (установлены фильтры: {{ count }})",
+      "show_more": "Показать больше",
+      "show_less": "Показать меньше"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -218,7 +243,12 @@
         "comment": "Комментарий",
         "send": "Отправить",
         "post_success": "Спасибо за обращение. Мы свяжемся с вами как можно скорее.",
+<<<<<<< HEAD
         "error_heading": "Измените следующие элементы:"
+=======
+        "error_heading": "Измените следующие элементы:",
+        "title": "Форма для связи"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -257,7 +287,12 @@
         "product": "Товар",
         "price": "Цена",
         "total": "Всего",
+<<<<<<< HEAD
         "quantity": "Количество"
+=======
+        "quantity": "Количество",
+        "image": "Изображение продукта"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "login": {
         "title": "Уже есть учетная запись?",
@@ -274,8 +309,12 @@
     },
     "featured_collection": {
       "view_all": "Посмотреть все",
+<<<<<<< HEAD
       "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
       "slider": "Ползунок"
+=======
+      "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\""
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Посмотреть все"
@@ -283,7 +322,11 @@
     "collection_template": {
       "title": "Коллекция",
       "empty": "Продукты не найдены",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">удалите фильтры</a>"
+=======
+      "use_fewer_filters_html": "Используйте меньше фильтров или <a class=\"{{ class }}\" href=\"{{ link }}\">удалите все</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Загрузить видео: {{ description }}"
@@ -385,7 +428,11 @@
     },
     "reset_password": {
       "title": "Сбросьте пароль учетной записи",
+<<<<<<< HEAD
       "subtext": "Введите новый пароль для {{ email }}",
+=======
+      "subtext": "Введите новый пароль",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Пароль",
       "password_confirm": "Подтвердить пароль",
       "submit": "Сбросить пароль"

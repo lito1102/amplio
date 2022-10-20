@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Dawn 4.0.0 introduces the ability to control how many columns appear in many of your sections and templates, and allows you to define heading text size in all sections. This update also features fixes and improvements, including a fix ensuring the correct product details display in the cart notification. 
 
 ### Added
@@ -24,3 +25,13 @@ Dawn 4.0.0 introduces the ability to control how many columns appear in many of 
 - We fixed an issue with the desktop header menu dropdown animations. 
 - We updated the SEO metadata for collection pages. 
 - We fixed an issue with header menus not opening on older browsers.
+=======
+Dawn 7.0.1 introduces several bug fixes.
+
+### Fixes and improvements
+- We fixed an issue causing mobile slider controls to display unnecessarily under some conditions.
+- We fixed an issue where hidden variant media were visible in product media modals.
+- We fixed a spacing issue with the “Middle center” desktop logo position setting.
+- We fixed an issue that could prevent the complementary products block from displaying product images.
+- We updated Shopify Help Center links for complementary products.
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9

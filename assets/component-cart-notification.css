@@ -7,8 +7,11 @@
 }
 
 .cart-notification {
+<<<<<<< HEAD
   margin-top: 4em;
   background-color: #f4f4f4;
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   border-bottom-right-radius: var(--popup-corner-radius);
   border-bottom-left-radius: var(--popup-corner-radius);
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
@@ -20,6 +23,7 @@
   transform: translateY(-100%);
   visibility: hidden;
   width: 100%;
+<<<<<<< HEAD
   z-index: 20;
   filter: drop-shadow(
     var(--popup-shadow-horizontal-offset)
@@ -27,6 +31,19 @@
     var(--popup-shadow-blur-radius)
     rgba(var(--color-shadow), var(--popup-shadow-opacity))
   );
+=======
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+.cart-notification.focused {
+  box-shadow: 0 0 .2rem 0 rgba(var(--color-foreground), .3),
+  var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+.cart-notification:focus-visible {
+  box-shadow: 0 0 .2rem 0 rgba(var(--color-foreground), .3),
+  var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 @media screen and (min-width: 750px) {

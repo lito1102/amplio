@@ -9,7 +9,11 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 .totals > h3 {
+=======
+.totals > h2 {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
 

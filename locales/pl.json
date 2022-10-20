@@ -51,7 +51,12 @@
     "slider": {
       "of": "z",
       "next_slide": "Przesuń w prawo",
+<<<<<<< HEAD
       "previous_slide": "Przesuń w lewo"
+=======
+      "previous_slide": "Przesuń w lewo",
+      "name": "Suwak"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,12 +79,21 @@
     "skip_to_product_info": "Pomiń, aby przejść do informacji o produkcie",
     "total_reviews": "suma recenzji",
     "star_reviews_info": "{{ rating_value }} z {{ rating_max }} gwiazdek",
+<<<<<<< HEAD
     "collapsible_content_title": "Zwijana treść"
+=======
+    "collapsible_content_title": "Zwijana treść",
+    "complementary_products": "Produkty uzupełniające"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
       "blog": "Blog",
+<<<<<<< HEAD
       "read_more_title": "Czytaj więcej: {{ title }}",
+=======
+      "read_more_title": "Czytaj dalej: {{ title }}",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "moderated": "Pamiętaj, że komentarze muszą zostać zatwierdzone przed ich opublikowaniem.",
       "comment_form_title": "Zostaw komentarz",
       "name": "Nazwa",
@@ -148,7 +162,15 @@
       },
       "view_full_details": "Pokaż kompletne dane",
       "include_taxes": "Z wliczonym podatkiem.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy realizacji zakupu."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy realizacji zakupu.",
+      "choose_options": "Wybierz opcje",
+      "choose_product_options": "Wybierz opcje dla {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [niedostępne]",
+      "variant_sold_out_or_unavailable": "Wariant wyprzedany lub niedostępny"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Galeria multimediów"
@@ -156,7 +178,11 @@
     "facets": {
       "apply": "Zastosuj",
       "clear": "Wyczyść",
+<<<<<<< HEAD
       "clear_all": "Wyczyść wszystko",
+=======
+      "clear_all": "Usuń wszystko",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Od",
       "filter_and_sort": "Filtrowanie i sortowanie",
       "filter_by_label": "Filtr:",
@@ -184,7 +210,14 @@
         "few": "{{ count }} produkty(-ów)",
         "many": "{{ count }} produkty(-ów)"
       },
+<<<<<<< HEAD
       "clear_filter": "Wyczyść filtr"
+=======
+      "clear_filter": "Usuń filtr",
+      "filter_selected_accessibility": "{{ type }} (wybrano {{ count }} fitry(-ów))",
+      "show_more": "Pokaż więcej",
+      "show_less": "Pokaż mniej"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -218,7 +251,12 @@
         "comment": "Komentarz",
         "send": "Wyślij",
         "post_success": "Dziękujemy za skontaktowanie się z nami. Skontaktujemy się z Tobą tak szybko, jak to możliwe.",
+<<<<<<< HEAD
         "error_heading": "Dostosuj następujące dane:"
+=======
+        "error_heading": "Dostosuj następujące dane:",
+        "title": "Formularz kontaktowy"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -257,7 +295,12 @@
         "product": "Produkt",
         "price": "Cena",
         "total": "Suma",
+<<<<<<< HEAD
         "quantity": "Ilość"
+=======
+        "quantity": "Ilość",
+        "image": "Obraz produktu"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "login": {
         "title": "Masz już konto?",
@@ -270,12 +313,20 @@
     "featured_blog": {
       "view_all": "Wyświetl wszystkie",
       "onboarding_title": "Post na blogu",
+<<<<<<< HEAD
       "onboarding_content": "Zapewnij swoim klientom podsumowanie Twojego wpisu na blogu"
     },
     "featured_collection": {
       "view_all": "Wyświetl wszystkie",
       "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}",
       "slider": "Suwak"
+=======
+      "onboarding_content": "Przedstaw swoim klientom podsumowanie swojego wpisu na blogu"
+    },
+    "featured_collection": {
+      "view_all": "Wyświetl wszystkie",
+      "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Wyświetl wszystkie"
@@ -283,7 +334,11 @@
     "collection_template": {
       "title": "Kolekcja",
       "empty": "Nie znaleziono produktów",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Użyj mniejszej ilości filtrów lub <a class=\"{{ class }}\" href=\"{{ link }}\">Wyczyść wszystko</a>"
+=======
+      "use_fewer_filters_html": "Użyj mniejszej ilości filtrów lub <a class=\"{{ class }}\" href=\"{{ link }}\">usuń wszystko</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Załaduj film: {{ description }}"
@@ -410,7 +465,11 @@
     },
     "reset_password": {
       "title": "Zresetuj hasło do konta",
+<<<<<<< HEAD
       "subtext": "Wprowadź nowe hasło do {{ email }}",
+=======
+      "subtext": "Wprowadź nowe hasło",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Hasło",
       "password_confirm": "Potwierdź hasło",
       "submit": "Zresetuj hasło"

@@ -27,6 +27,7 @@
         <div class="collage__item collage__item--{{ block.type }} collage__item--{{ section.settings.desktop_layout }}" {{ block.shopify_attributes }}>
           {%- case block.type -%}
             {%- when 'image' -%}
+<<<<<<< HEAD
               <div class="collage-card color-{{ settings.card_color_scheme }}{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
                 <div class="media media--transparent ratio"{% if block.settings.image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
                   {%- if block.settings.image != blank -%}
@@ -46,6 +47,18 @@
                       width="{{ block.settings.image.width }}"
                       height="{{ block.settings.image.height }}"
                     >
+=======
+              <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
+                <div class="media media--transparent ratio"{% if block.settings.image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
+                  {%- if block.settings.image != blank -%}
+                    {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)}{%- endcapture -%}
+
+                    {{ block.settings.image | image_url: width: 3000 | image_tag:
+                      loading: 'lazy',
+                      sizes: sizes,
+                      widths: '550, 720, 990, 1100, 1500, 2200, 3000'
+                    }}
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                   {%- else -%}
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
@@ -63,14 +76,23 @@
                 card_collection: block.settings.collection,
                 media_aspect_ratio: 'adapt',
                 columns: 2,
+<<<<<<< HEAD
                 extend_height: true
               %}
             {%- when 'video' -%}
               <div class="collage-card color-{{ settings.card_color_scheme }}">
+=======
+                extend_height: true,
+                wrapper_class: section.settings.card_styles
+              %}
+            {%- when 'video' -%}
+              <div class="collage-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }}{% endif %}">
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                 <noscript>
                   <a href="{{ block.settings.video_url }}" class="collage-card__link{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
                     <div class="media media--transparent ratio"{% if block.settings.cover_image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
                       {%- if block.settings.cover_image != blank -%}
+<<<<<<< HEAD
                         <img
                           srcset="{%- if block.settings.cover_image.width >= 550 -%}{{ block.settings.cover_image | image_url: width: 550 }} 550w,{%- endif -%}
                             {%- if block.settings.cover_image.width >= 720 -%}{{ block.settings.cover_image | image_url: width: 720 }} 720w,{%- endif -%}
@@ -87,6 +109,14 @@
                           width="{{ block.settings.cover_image.width }}"
                           height="{{ block.settings.cover_image.height }}"
                         >
+=======
+                        {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px){%- endcapture -%}
+                        {{ block.settings.cover_image | image_url: width: 3000 | image_tag:
+                          loading: 'lazy',
+                          sizes: sizes,
+                          widths: '550, 720, 990, 1100, 1500, 2200, 3000'
+                        }}
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                       {%- else -%}
                         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                       {%- endif -%}
@@ -95,11 +125,16 @@
                 </noscript>
                 <modal-opener class="no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
                   <div class="deferred-media">
+<<<<<<< HEAD
                     <button class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}" type="button" aria-haspopup="dialog" data-media-id="{{ block.settings.video_url.id }}">
+=======
+                    <button class="deferred-media__poster full-unstyled-link{% if block.settings.image_padding %} collage-card-spacing{% endif %}" type="button" aria-label="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}" aria-haspopup="dialog" data-media-id="{{ block.settings.video_url.id }}">
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                       <div class="media media--transparent ratio"{% if block.settings.cover_image != blank %} style="--ratio-percent: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
                         <span class="deferred-media__poster-button motion-reduce">
                           {%- render 'icon-play' -%}
                         </span>
+<<<<<<< HEAD
   
                         {%- if block.settings.cover_image != blank -%}
                           <img
@@ -118,6 +153,16 @@
                             width="{{ block.settings.cover_image.width }}"
                             height="{{ block.settings.cover_image.height }}"
                           >
+=======
+
+                        {%- if block.settings.cover_image != blank -%}
+                          {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px){%- endcapture -%}
+                          {{ block.settings.cover_image | image_url: width: 3000 | image_tag:
+                            loading: 'lazy',
+                            sizes: sizes,
+                            widths: '550, 720, 990, 1100, 1500, 2200, 3000'
+                          }}
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                         {%- else -%}
                           {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                         {%- endif -%}
@@ -215,6 +260,26 @@
     },
     {
       "type": "select",
+<<<<<<< HEAD
+=======
+      "id": "card_styles",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.collage.settings.card_styles.options__1.label"
+        },
+        {
+          "value": "product-card-wrapper",
+          "label": "t:sections.collage.settings.card_styles.options__2.label"
+        }
+      ],
+      "default": "product-card-wrapper",
+      "info": "t:sections.collage.settings.card_styles.info",
+      "label": "t:sections.collage.settings.card_styles.label"
+    },
+    {
+      "type": "select",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "id": "color_scheme",
       "options": [
         {
@@ -370,4 +435,8 @@
     }
   ]
 }
+<<<<<<< HEAD
 {% endschema %}
+=======
+{% endschema %}
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9

@@ -51,7 +51,12 @@
     "slider": {
       "of": "จาก",
       "next_slide": "ไปสไลด์ขวา",
+<<<<<<< HEAD
       "previous_slide": "ไปสไลด์ซ้าย"
+=======
+      "previous_slide": "ไปสไลด์ซ้าย",
+      "name": "แถบเลื่อน"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "ข้ามไปยังข้อมูลสินค้า",
     "total_reviews": "รีวิวทั้งหมด",
     "star_reviews_info": "{{ rating_value }} จาก {{ rating_max }} ดาว",
+<<<<<<< HEAD
     "collapsible_content_title": "เนื้อหาที่ย่อได้"
+=======
+    "collapsible_content_title": "เนื้อหาที่ย่อได้",
+    "complementary_products": "สินค้าเสริม"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "ดูรายละเอียดทั้งหมด",
       "include_taxes": "รวมภาษี",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คำนวณในขั้นตอนการชำระเงิน"
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คำนวณในขั้นตอนการชำระเงิน",
+      "choose_options": "เลือกตัวเลือก",
+      "choose_product_options": "เลือกตัวเลือกสำหรับ {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [ไม่พร้อมใช้งาน]",
+      "variant_sold_out_or_unavailable": "ตัวเลือกสินค้าขายหมดแล้วหรือไม่พร้อมจำหน่าย"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "แกลเลอรีสื่อ"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "นำไปใช้",
       "clear": "ล้าง",
+<<<<<<< HEAD
       "clear_all": "ล้างทั้งหมด",
+=======
+      "clear_all": "ลบออกทั้งหมด",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "จาก",
       "filter_and_sort": "กรองและจัดเรียง",
       "filter_by_label": "ตัวกรอง:",
@@ -176,7 +198,14 @@
       "sort_button": "จัดเรียง",
       "sort_by_label": "เรียงตาม:",
       "to": "ไปยัง",
+<<<<<<< HEAD
       "clear_filter": "ล้างตัวกรอง"
+=======
+      "clear_filter": "ลบตัวกรองออก",
+      "filter_selected_accessibility": "{{ type }} (เลือกตัวกรองแล้ว {{ count }} รายการ)",
+      "show_more": "แสดงมากขึ้น",
+      "show_less": "แสดงน้อยลง"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -191,8 +220,13 @@
       "products": "สินค้า",
       "search_for": "ค้นหา “{{ terms }}”",
       "results_with_count_and_term": {
+<<<<<<< HEAD
         "one": "พบผลลัพธ์ {{ count }} รายการสำหรับ \"{{ terms }}\"",
         "other": "พบผลลัพธ์ {{ count }} รายการสำหรับ \"{{ terms }}\""
+=======
+        "one": "พบผลลัพธ์ {{ count }} รายการสำหรับ “{{ terms }}”",
+        "other": "พบผลลัพธ์ {{ count }} รายการสำหรับ “{{ terms }}”"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "cart": {
@@ -206,7 +240,12 @@
         "comment": "ความคิดเห็น",
         "send": "ส่ง",
         "post_success": "ขอขอบคุณที่ติดต่อเรา เราจะติดต่อกลับไปหาคุณโดยเร็วที่สุด",
+<<<<<<< HEAD
         "error_heading": "โปรดแก้ไขข้อมูลดังต่อไปนี้:"
+=======
+        "error_heading": "โปรดแก้ไขข้อมูลดังต่อไปนี้:",
+        "title": "แบบฟอร์มการติดต่อ"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +281,12 @@
         "product": "สินค้า",
         "price": "ราคา",
         "total": "ยอดรวม",
+<<<<<<< HEAD
         "quantity": "ปริมาณ"
+=======
+        "quantity": "ปริมาณ",
+        "image": "รูปภาพสินค้า"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "อัปเดต",
       "login": {
@@ -260,8 +304,12 @@
     },
     "featured_collection": {
       "view_all": "ดูทั้งหมด",
+<<<<<<< HEAD
       "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}",
       "slider": "แถบเลื่อน"
+=======
+      "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "ดูทั้งหมด"
@@ -269,7 +317,11 @@
     "collection_template": {
       "title": "คอลเลกชัน",
       "empty": "ไม่พบสินค้า",
+<<<<<<< HEAD
       "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด</a>"
+=======
+      "use_fewer_filters_html": "ใช้ตัวกรองให้น้อยลง หรือ<a class=\"{{ class }}\" href=\"{{ link }}\">ลบทั้งหมด</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "โหลดวิดีโอ: {{ description }}"
@@ -371,7 +423,11 @@
     },
     "reset_password": {
       "title": "รีเซ็ตรหัสผ่านของบัญชีผู้ใช้",
+<<<<<<< HEAD
       "subtext": "ป้อนรหัสผ่านใหม่สำหรับ {{ email }}",
+=======
+      "subtext": "ป้อนรหัสผ่านใหม่",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "รหัสผ่าน",
       "password_confirm": "ยืนยันรหัสผ่าน",
       "submit": "รีเซ็ตรหัสผ่าน"

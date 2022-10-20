@@ -373,7 +373,11 @@ noscript .localization-selector.link {
 
 @media screen and (min-width: 750px) {
   .footer__copyright {
+<<<<<<< HEAD
     /* text-align: right; */
+=======
+    text-align: right;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   }
 }
 
@@ -425,8 +429,13 @@ noscript .localization-selector.link {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
+<<<<<<< HEAD
     text-decoration: none;
     /* text-underline-offset: 0.3rem; */
+=======
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
@@ -493,7 +502,11 @@ noscript .localization-selector.link {
 }
 
 .footer .disclosure__link--active {
+<<<<<<< HEAD
   text-decoration: none;
+=======
+  text-decoration: underline;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 /* check for flexbox gap in older Safari versions */

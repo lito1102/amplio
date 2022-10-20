@@ -20,7 +20,11 @@
   }
 {%- endstyle -%}
 
+<<<<<<< HEAD
 <div class="color-{{ section.settings.color_scheme }} gradient">
+=======
+<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   <product-recommendations class="product-recommendations page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="product-recommendations__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
@@ -41,6 +45,7 @@
   </product-recommendations>
 </div>
 
+<<<<<<< HEAD
 {% javascript %}
   class ProductRecommendations extends HTMLElement {
     constructor() {
@@ -77,6 +82,8 @@
   customElements.define('product-recommendations', ProductRecommendations);
 {% endjavascript %}
 
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 {% schema %}
 {
   "name": "t:sections.product-recommendations.name",

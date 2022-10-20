@@ -15,12 +15,19 @@
   }
 }
 
+<<<<<<< HEAD
 .payment-item {
+=======
+.list-payment__item {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   align-items: center;
   display: flex;
   padding: 0.5rem;
 }
+<<<<<<< HEAD
 
 .payment-item > svg {
   width: 28px;
 }
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9

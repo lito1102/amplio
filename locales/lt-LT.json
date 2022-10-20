@@ -51,7 +51,12 @@
     "slider": {
       "of": "iš",
       "next_slide": "Slinkti dešinėn",
+<<<<<<< HEAD
       "previous_slide": "Slinkti kairėn"
+=======
+      "previous_slide": "Slinkti kairėn",
+      "name": "Slankiklis"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Pereiti prie informacijos apie gaminį",
     "total_reviews": "iš viso apžvalgų",
     "star_reviews_info": "{{ rating_value }} iš {{ rating_max }} žvaigždučių",
+<<<<<<< HEAD
     "collapsible_content_title": "Suskleidžiamas turinys"
+=======
+    "collapsible_content_title": "Suskleidžiamas turinys",
+    "complementary_products": "Papildomi produktai"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -148,7 +158,15 @@
       },
       "view_full_details": "Žiūrėti visą informaciją",
       "include_taxes": "Mokesčiai įtraukti.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Siuntimo išlaidos</a> apskaičiuojamos atsiskaitant."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Siuntimo išlaidos</a> apskaičiuojamos atsiskaitant.",
+      "choose_options": "Rinktis variantus",
+      "choose_product_options": "Rinktis {{ product_name }} variantus",
+      "value_unavailable": "{{ option_value }} [Neturime]",
+      "variant_sold_out_or_unavailable": "Prekė išparduota arba jos neturime"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Medijų galerija"
@@ -156,7 +174,11 @@
     "facets": {
       "apply": "Taikyti",
       "clear": "Išvalyti",
+<<<<<<< HEAD
       "clear_all": "Išvalyti viską",
+=======
+      "clear_all": "Pašalinti viską",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Nuo",
       "filter_and_sort": "Filtruoti ir rūšiuoti",
       "filter_by_label": "Filtruoti:",
@@ -184,7 +206,14 @@
         "few": "{{ count }} gaminiai (-ių)",
         "many": "{{ count }} gaminiai (-ių)"
       },
+<<<<<<< HEAD
       "clear_filter": "Išvalyti filtrą"
+=======
+      "clear_filter": "Pašalinti filtrą",
+      "filter_selected_accessibility": "{{ type }} (pasirinkta filtrų: {{ count }})",
+      "show_more": "Rodyti daugiau",
+      "show_less": "Rodyti mažiau"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -218,7 +247,12 @@
         "comment": "Komentuoti",
         "send": "Siųsti",
         "post_success": "Dėkojame, kad su mumis susisiekėte. Atsakysime kaip galėdami greičiau.",
+<<<<<<< HEAD
         "error_heading": "Pakoreguokite toliau pateiktą informaciją."
+=======
+        "error_heading": "Pakoreguokite toliau pateiktą informaciją.",
+        "title": "Kontaktinė forma"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -257,7 +291,12 @@
         "product": "Gaminys",
         "price": "Kaina",
         "total": "Visa suma",
+<<<<<<< HEAD
         "quantity": "Kiekis"
+=======
+        "quantity": "Kiekis",
+        "image": "Gaminio nuotrauka"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "login": {
         "title": "Turite paskyrą?",
@@ -274,8 +313,12 @@
     },
     "featured_collection": {
       "view_all": "Žr. viską",
+<<<<<<< HEAD
       "view_all_label": "Žr. visus kolekcijos „{{ collection_name }}“ gaminius",
       "slider": "Slankiklis"
+=======
+      "view_all_label": "Žr. visus kolekcijos „{{ collection_name }}“ gaminius"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Žr. viską"
@@ -283,7 +326,11 @@
     "collection_template": {
       "title": "Kolekcija",
       "empty": "Nerasta jokių gaminių",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Naudoti mažiau filtrų arba <a class=\"{{ class }}\" href=\"{{ link }}\">išvalyti viską</a>"
+=======
+      "use_fewer_filters_html": "Naudoti mažiau filtrų arba <a class=\"{{ class }}\" href=\"{{ link }}\">pašalinti viską</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Įkelti vaizdo įrašą „{{ description }}“"
@@ -410,7 +457,11 @@
     },
     "reset_password": {
       "title": "Nustatyti paskyros slaptažodį iš naujo",
+<<<<<<< HEAD
       "subtext": "Įveskite naują paskyros {{ email }} slaptažodį",
+=======
+      "subtext": "Įveskite naują slaptažodį",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Slaptažodis",
       "password_confirm": "Patvirtinti slaptažodį",
       "submit": "Nustatyti slaptažodį iš naujo"

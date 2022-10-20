@@ -51,7 +51,12 @@
     "slider": {
       "of": "/",
       "next_slide": "Következő dia",
+<<<<<<< HEAD
       "previous_slide": "Előző dia"
+=======
+      "previous_slide": "Előző dia",
+      "name": "Csúszka"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Kihagyás, és ugrás a termékadatokra",
     "total_reviews": "összes értékelés",
     "star_reviews_info": "{{ rating_max }}/{{ rating_value }} csillag",
+<<<<<<< HEAD
     "collapsible_content_title": "Összecsukható tartalom"
+=======
+    "collapsible_content_title": "Összecsukható tartalom",
+    "complementary_products": "Kiegészítő termékek"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Minden részlet megtekintése",
       "include_taxes": "Tartalmazza az adót.",
+<<<<<<< HEAD
       "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget</a> a megrendeléskor számítjuk ki."
+=======
+      "shipping_policy_html": "A <a href=\"{{ link }}\">szállítási költséget</a> a megrendeléskor számítjuk ki.",
+      "choose_options": "Válassz a lehetőségek közül",
+      "choose_product_options": "Termékváltozatok – {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [nincs készleten]",
+      "variant_sold_out_or_unavailable": "A változat elfogyott vagy nincs készleten"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Médiatár"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Alkalmaz",
       "clear": "Törlés",
+<<<<<<< HEAD
       "clear_all": "Az összes törlése",
+=======
+      "clear_all": "Az összes eltávolítása",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Ettől:",
       "filter_and_sort": "Szűrés és rendezés",
       "filter_by_label": "Szűrés:",
@@ -176,7 +198,14 @@
       "sort_button": "Rendezés",
       "sort_by_label": "Rendezési szempont:",
       "to": "Eddig:",
+<<<<<<< HEAD
       "clear_filter": "Szűrő kikapcsolása"
+=======
+      "clear_filter": "Szűrő eltávolítása",
+      "filter_selected_accessibility": "{{ type }} ({{ count }} szűrő kiválasztva)",
+      "show_more": "Több részlet",
+      "show_less": "Kevesebb részlet"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "comment": "Hozzászólás",
         "send": "Küldés",
         "post_success": "Köszönjük, hogy írtál nekünk. A lehető legrövidebb időn belül válaszolni fogunk.",
+<<<<<<< HEAD
         "error_heading": "Kérjük, helyesbítsd a következőket:"
+=======
+        "error_heading": "Kérjük, helyesbítsd a következőket:",
+        "title": "Kapcsolattartói űrlap"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +276,12 @@
         "product": "Termék",
         "price": "Ár",
         "total": "Végösszeg",
+<<<<<<< HEAD
         "quantity": "Mennyiség"
+=======
+        "quantity": "Mennyiség",
+        "image": "Termék képe"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Frissítés",
       "login": {
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Az összes megtekintése",
+<<<<<<< HEAD
       "view_all_label": "Az ebben a kollekcióban szereplő összes termék megtekintése: {{ collection_name }}",
       "slider": "Csúszka"
+=======
+      "view_all_label": "Az ebben a kollekcióban szereplő összes termék megtekintése: {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Az összes megtekintése"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Kollekció",
       "empty": "Nincs találat",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">töröld az összeset</a>."
+=======
+      "use_fewer_filters_html": "Használj kevesebb szűrőt, vagy <a class=\"{{ class }}\" href=\"{{ link }}\">távolítsd el az összeset</a>."
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Videó betöltése: {{ description }}"
@@ -371,7 +418,11 @@
     },
     "reset_password": {
       "title": "Új fiókjelszó létrehozása",
+<<<<<<< HEAD
       "subtext": "Írd be az ehhez az e-mail-címhez tartozó új jelszót: {{ email }}.",
+=======
+      "subtext": "Írd be az új jelszót",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Jelszó",
       "password_confirm": "Jelszó megerősítése",
       "submit": "Új jelszó készítése"

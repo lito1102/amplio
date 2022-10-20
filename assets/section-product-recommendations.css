@@ -2,6 +2,7 @@
   display: block;
 }
 
+<<<<<<< HEAD
 .product-recommendations:not(.product-recommendations--loaded) {
   padding: 0;
   margin: 0;
@@ -10,4 +11,8 @@
 .product-recommendations__heading {
   margin: 0;
   margin-bottom: 3rem;
+=======
+.product-recommendations__heading {
+  margin: 0 0 3rem;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }

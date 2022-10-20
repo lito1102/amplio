@@ -12,12 +12,15 @@
   margin-bottom: 0;
 }
 
+<<<<<<< HEAD
 .rte > p {
   font-size: 1.5rem;
   letter-spacing: .1em;
   color: var(--primary-dark-text);
 }
 
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 .rte table {
   table-layout: fixed;
 }

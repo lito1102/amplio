@@ -51,7 +51,12 @@
     "slider": {
       "of": "z",
       "next_slide": "Snímek vpravo",
+<<<<<<< HEAD
       "previous_slide": "Snímek vlevo"
+=======
+      "previous_slide": "Snímek vlevo",
+      "name": "Posuvník"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Přejít na informace o produktu",
     "total_reviews": "celkový počet recenzí",
     "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hvězdiček",
+<<<<<<< HEAD
     "collapsible_content_title": "Sbalitelný obsah"
+=======
+    "collapsible_content_title": "Sbalitelný obsah",
+    "complementary_products": "Doplňkové produkty"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -148,7 +158,15 @@
       },
       "view_full_details": "Zobrazit veškeré podrobnosti",
       "include_taxes": "Včetně daní.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné</a> se vypočítá na pokladně."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné</a> se vypočítá na pokladně.",
+      "choose_options": "Výběr možností",
+      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [nedostupné]",
+      "variant_sold_out_or_unavailable": "Vyprodaná nebo nedostupná varianta"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Galerie multimédií"
@@ -156,7 +174,11 @@
     "facets": {
       "apply": "Použít",
       "clear": "Vymazat",
+<<<<<<< HEAD
       "clear_all": "Vymazat vše",
+=======
+      "clear_all": "Odebrat vše",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Od",
       "filter_and_sort": "Filtrování a řazení",
       "filter_by_label": "Filtrovat:",
@@ -184,7 +206,14 @@
         "few": "Počet produktů: {{ count }}",
         "many": "Počet produktů: {{ count }}"
       },
+<<<<<<< HEAD
       "clear_filter": "Vymazat filtr"
+=======
+      "clear_filter": "Odebrat filtr",
+      "filter_selected_accessibility": "{{ type }} (počet vybraných filtrů: {{ count }})",
+      "show_more": "Zobrazit více",
+      "show_less": "Zobrazit méně"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -218,7 +247,12 @@
         "comment": "Komentář",
         "send": "Odeslat",
         "post_success": "Děkujeme, že jste nás kontaktovali. Ozveme se vám co možná nejdříve.",
+<<<<<<< HEAD
         "error_heading": "Upravte prosím následující informace:"
+=======
+        "error_heading": "Upravte prosím následující informace:",
+        "title": "Kontaktní formulář"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -257,7 +291,12 @@
         "product": "Produkt",
         "price": "Cena",
         "total": "Celkem",
+<<<<<<< HEAD
         "quantity": "Množství"
+=======
+        "quantity": "Množství",
+        "image": "Obrázek produktu"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "login": {
         "title": "Máte účet?",
@@ -274,8 +313,12 @@
     },
     "featured_collection": {
       "view_all": "Zobrazit vše",
+<<<<<<< HEAD
       "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
       "slider": "Posuvník"
+=======
+      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Zobrazit vše"
@@ -283,7 +326,11 @@
     "collection_template": {
       "title": "Kolekce",
       "empty": "Nenalezeny žádné produkty",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazat vše</a>."
+=======
+      "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">všechny odebrat</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Načíst video: {{ description }}"
@@ -385,7 +432,11 @@
     },
     "reset_password": {
       "title": "Resetujte heslo účtu",
+<<<<<<< HEAD
       "subtext": "Zadejte nové heslo pro {{ email }}",
+=======
+      "subtext": "Zadejte nové heslo",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Heslo",
       "password_confirm": "Potvrdit heslo",
       "submit": "Resetovat heslo"

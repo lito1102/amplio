@@ -14,8 +14,13 @@
 }
 
 .list-menu__item--active {
+<<<<<<< HEAD
   /* text-decoration: underline; */
   /* text-underline-offset: 0.3rem; */
+=======
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 .list-menu__item--active:hover {

@@ -53,7 +53,11 @@
       "settings": {
         "type_header_font": {
           "label": "フォント",
+<<<<<<< HEAD
           "info": "異なるフォントを選択すると、ストアの速度に影響を与える可能性があります。[システムフォントについて詳しく知る。](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+=======
+          "info": "異なるフォントを選択すると、ストアの速度に影響を与える可能性があります。[システムフォントについて詳しく知る。](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "header__1": {
           "content": "見出し"
@@ -63,7 +67,11 @@
         },
         "type_body_font": {
           "label": "フォント",
+<<<<<<< HEAD
           "info": "異なるフォントを選択すると、ストアの速度に影響を与える可能性があります。[システムフォントについて詳しく知る。](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)"
+=======
+          "info": "異なるフォントを選択すると、ストアの速度に影響を与える可能性があります。[システムフォントについて詳しく知る。](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "heading_scale": {
           "label": "フォント・サイズ・スケール"
@@ -236,11 +244,16 @@
       }
     },
     "cards": {
+<<<<<<< HEAD
       "name": "カード",
       "settings": {
         "header__badge": {
           "content": "バッジ"
         },
+=======
+      "name": "商品カード",
+      "settings": {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         "style": {
           "options__1": {
             "label": "スタンダード"
@@ -268,7 +281,11 @@
           "options__4": {
             "label": "右上"
           },
+<<<<<<< HEAD
           "label": "商品カードの位置"
+=======
+          "label": "カードでの位置"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "sale_badge_color_scheme": {
           "label": "販売バッジの配色"
@@ -282,7 +299,12 @@
       "name": "ボタン"
     },
     "variant_pills": {
+<<<<<<< HEAD
       "name": "バリエーションのピル型ボタン"
+=======
+      "name": "バリエーションのピル型ボタン",
+      "paragraph": "バリエーションのピル型ボタンは、商品バリエーションを表示する1つの方法です。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/themes/theme-structure/page-types#variant-picker-block)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "inputs": {
       "name": "入力"
@@ -299,6 +321,67 @@
     },
     "drawers": {
       "name": "ドロワー"
+<<<<<<< HEAD
+=======
+    },
+    "cart": {
+      "name": "カート",
+      "settings": {
+        "cart_type": {
+          "label": "カートタイプ",
+          "drawer": {
+            "label": "ドロワー"
+          },
+          "page": {
+            "label": "ページ"
+          },
+          "notification": {
+            "label": "ポップアップ通知"
+          }
+        },
+        "show_vendor": {
+          "label": "販売元を表示"
+        },
+        "show_cart_note": {
+          "label": "カートメモを有効にする"
+        },
+        "cart_drawer": {
+          "header": "カートドロワー",
+          "collection": {
+            "label": "コレクション",
+            "info": "カートドロワーが空の場合に表示されます。"
+          }
+        }
+      }
+    },
+    "collection_cards": {
+      "name": "コレクションカード",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "標準"
+          },
+          "options__2": {
+            "label": "カード"
+          },
+          "label": "スタイル"
+        }
+      }
+    },
+    "blog_cards": {
+      "name": "ブログカード",
+      "settings": {
+        "style": {
+          "options__1": {
+            "label": "標準"
+          },
+          "options__2": {
+            "label": "カード"
+          },
+          "label": "スタイル"
+        }
+      }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "sections": {
@@ -338,6 +421,12 @@
         },
         "options__3": {
           "label": "大"
+<<<<<<< HEAD
+=======
+        },
+        "options__4": {
+          "label": "特大"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
@@ -349,6 +438,21 @@
             "text": {
               "label": "テキスト"
             },
+<<<<<<< HEAD
+=======
+            "text_alignment": {
+              "label": "テキストアラインメント",
+              "options__1": {
+                "label": "左"
+              },
+              "options__2": {
+                "label": "中央"
+              },
+              "options__3": {
+                "label": "右"
+              }
+            },
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             "link": {
               "label": "リンク"
             }
@@ -380,6 +484,19 @@
           "options__2": {
             "label": "列"
           }
+<<<<<<< HEAD
+=======
+        },
+        "card_styles": {
+          "label": "カードスタイル",
+          "info": "商品、コレクション、およびブログカードのスタイルは、テーマ設定で更新できます。",
+          "options__1": {
+            "label": "個別のカードスタイルを使用する"
+          },
+          "options__2": {
+            "label": "すべてを商品カードとする"
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       },
       "blocks": {
@@ -433,7 +550,11 @@
             },
             "description": {
               "label": "動画の代替テキスト",
+<<<<<<< HEAD
               "info": "スクリーンリーダーを使用しているお客様向けにビデオの説明を記入してください。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#video-block)"
+=======
+              "info": "スクリーンリーダーを使用しているお客様向けにビデオの説明を記入してください。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             }
           },
           "name": "ビデオ"
@@ -460,7 +581,11 @@
           "options__3": {
             "label": "正方形"
           },
+<<<<<<< HEAD
           "info": "コレクションを編集して画像を追加します。[詳しくはこちら](https://help.shopify.com/en/manual/products/collections)"
+=======
+          "info": "コレクションを編集して画像を追加します。[詳しくはこちら](https://help.shopify.com/manual/products/collections)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "swipe_on_mobile": {
           "label": "モバイルでスワイプを有効にする"
@@ -533,7 +658,11 @@
         },
         "show_image": {
           "label": "記事のサムネイルを表示する",
+<<<<<<< HEAD
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "show_date": {
           "label": "日付を表示する"
@@ -587,7 +716,15 @@
         },
         "show_rating": {
           "label": "商品の評価を表示",
+<<<<<<< HEAD
           "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-collection-show-product-rating)"
+=======
+          "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
+        },
+        "enable_quick_buy": {
+          "label": "「クイック追加」ボタンを有効にする",
+          "info": "ポップアップやドロワーカートのタイプに最適です。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "columns_desktop": {
           "label": "デスクトップの列数"
@@ -654,8 +791,12 @@
         "link_list": {
           "settings": {
             "heading": {
+<<<<<<< HEAD
               "label": "見出し",
               "info": "メニューを表示するには見出しが必要です。"
+=======
+              "label": "見出し"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             },
             "menu": {
               "label": "メニュー",
@@ -684,7 +825,11 @@
           "label": "見出し"
         },
         "header__1": {
+<<<<<<< HEAD
           "info": "「マーケティングを受け入れる」のお客様リストに自動的に追加された購読者。[詳しくはこちら](https://help.shopify.com/en/manual/customers/manage-customers)",
+=======
+          "info": "「マーケティングを受け入れる」のお客様リストに自動的に追加された購読者。[詳しくはこちら](https://help.shopify.com/manual/customers/manage-customers)",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
           "content": "メール登録"
         },
         "header__2": {
@@ -744,7 +889,13 @@
           "options__3": {
             "label": "上部中央"
           },
+<<<<<<< HEAD
           "info": "位置はモバイル用に自動で最適化されます。"
+=======
+          "options__4": {
+            "label": "中央"
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "menu": {
           "label": "メニュー"
@@ -768,6 +919,21 @@
           "options__2": {
             "label": "メガメニュー"
           }
+<<<<<<< HEAD
+=======
+        },
+        "mobile_layout": {
+          "content": "モバイルのレイアウト"
+        },
+        "mobile_logo_position": {
+          "label": "モバイルのロゴの位",
+          "options__1": {
+            "label": "中央"
+          },
+          "options__2": {
+            "label": "左"
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
@@ -813,7 +979,11 @@
           "options__3": {
             "label": "大"
           },
+<<<<<<< HEAD
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "desktop_content_position": {
           "options__1": {
@@ -949,10 +1119,17 @@
         },
         "layout": {
           "options__1": {
+<<<<<<< HEAD
             "label": "最初の画像"
           },
           "options__2": {
             "label": "画像の表示秒数"
+=======
+            "label": "右"
+          },
+          "options__2": {
+            "label": "左"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
           },
           "label": "デスクトップ画像の配置",
           "info": "最初の画像は、デフォルトのモバイルレイアウトです。"
@@ -1104,7 +1281,11 @@
               "options__3": {
                 "label": "中"
               },
+<<<<<<< HEAD
               "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)",
+=======
+              "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
               "options__4": {
                 "label": "大"
               }
@@ -1130,10 +1311,17 @@
           "name": "共有",
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
               "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+=======
+              "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)。"
+            },
+            "title_info": {
+              "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             },
             "text": {
               "label": "テキスト"
@@ -1152,7 +1340,11 @@
           "label": "記事のサムネイルを表示する"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "ブロブ記事を編集して抜粋を変更します。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+=======
+          "content": "ブロブ記事を編集して抜粋を変更します。[詳しくはこちら](https://help.shopify.com/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "show_date": {
           "label": "日付を表示する"
@@ -1184,17 +1376,24 @@
           "options__4": {
             "label": "大"
           },
+<<<<<<< HEAD
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
     "main-cart-footer": {
       "name": "小計",
+<<<<<<< HEAD
       "settings": {
         "show_cart_note": {
           "label": "カートメモを有効にする"
         }
       },
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "blocks": {
         "subtotal": {
           "name": "小計金額"
@@ -1205,25 +1404,37 @@
       }
     },
     "main-cart-items": {
+<<<<<<< HEAD
       "name": "アイテム",
       "settings": {
         "show_vendor": {
           "label": "販売元を表示する"
         }
       }
+=======
+      "name": "アイテム"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "main-collection-banner": {
       "name": "コレクションバナー",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "コレクションを編集して説明文や画像を追加します。[詳しくはこちら](https://help.shopify.com/en/manual/products/collections/collection-layout)"
+=======
+          "content": "コレクションを編集して説明文や画像を追加します。[詳しくはこちら](https://help.shopify.com/manual/products/collections/collection-layout)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "show_collection_description": {
           "label": "コレクションの説明を表示する"
         },
         "show_collection_image": {
           "label": "コレクションの画像を表示する",
+<<<<<<< HEAD
           "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
@@ -1268,12 +1479,22 @@
         "header__3": {
           "content": "商品カード"
         },
+<<<<<<< HEAD
         "collapse_on_larger_devices": {
           "label": "デスクトップで折りたたむ"
         },
         "show_rating": {
           "label": "商品の評価を表示",
           "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-grid-show-product-rating)"
+=======
+        "show_rating": {
+          "label": "商品の評価を表示",
+          "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+        },
+        "enable_quick_buy": {
+          "label": "「クイック追加」ボタンを有効にする",
+          "info": "ポップアップやドロワーカートのタイプに最適です。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "columns_desktop": {
           "label": "デスクトップの列数"
@@ -1289,6 +1510,22 @@
           "options__2": {
             "label": "2列"
           }
+<<<<<<< HEAD
+=======
+        },
+        "filter_type": {
+          "label": "デスクトップの絞り込みレイアウト",
+          "options__1": {
+            "label": "水平"
+          },
+          "options__2": {
+            "label": "垂直"
+          },
+          "options__3": {
+            "label": "ドロワー"
+          },
+          "info": "ドロワーはデフォルトのモバイルレイアウトです。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
@@ -1330,7 +1567,11 @@
           "options__3": {
             "label": "正方形"
           },
+<<<<<<< HEAD
           "info": "コレクションを編集して画像を追加します。[詳しくはこちら](https://help.shopify.com/en/manual/products/collections)"
+=======
+          "info": "コレクションを編集して画像を追加します。[詳しくはこちら](https://help.shopify.com/manual/products/collections)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "columns_desktop": {
           "label": "デスクトップでの列数"
@@ -1416,10 +1657,17 @@
         "share": {
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)。"
             },
             "title_info": {
               "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+=======
+              "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)。"
+            },
+            "title_info": {
+              "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             },
             "text": {
               "label": "テキスト"
@@ -1541,7 +1789,11 @@
                 "label": "リサイクル"
               },
               "options__34": {
+<<<<<<< HEAD
                 "label": "返品"
+=======
+                "label": "戻る"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
               },
               "options__35": {
                 "label": "定規"
@@ -1616,7 +1868,103 @@
           "name": "商品評価",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-rating-block)"
+=======
+              "content": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-rating-block)"
+            }
+          }
+        },
+        "complementary_products": {
+          "name": "付属商品",
+          "settings": {
+            "paragraph": {
+              "content": "補完する商品を選択するには、Search & Discoveryアプリを追加してください。[詳しくはこちら](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+            },
+            "heading": {
+              "label": "見出し"
+            },
+            "make_collapsible_row": {
+              "label": "折りたたみ可能な行として表示する"
+            },
+            "icon": {
+              "info": "折りたたみ可能な行を表示しているときに表示されます。"
+            },
+            "product_list_limit": {
+              "label": "表示する商品の最大数"
+            },
+            "products_per_page": {
+              "label": "1ページあたりの商品数"
+            },
+            "pagination_style": {
+              "label": "ページネーションのスタイル",
+              "options": {
+                "option_1": "ドット",
+                "option_2": "カウンター",
+                "option_3": "数字"
+              }
+            },
+            "product_card": {
+              "heading": "商品カード"
+            },
+            "image_ratio": {
+              "label": "画像比",
+              "options": {
+                "option_1": "縦長",
+                "option_2": "正方形"
+              }
+            },
+            "enable_quick_add": {
+              "label": "「クイック追加」ボタンを有効にする"
+            }
+          }
+        },
+        "icon_with_text": {
+          "name": "テキスト付きアイコン",
+          "settings": {
+            "layout": {
+              "label": "レイアウト",
+              "options__1": {
+                "label": "水平"
+              },
+              "options__2": {
+                "label": "垂直"
+              }
+            },
+            "content": {
+              "label": "コンテンツ",
+              "info": "アイコンを選択するか、列または行ごとに画像を追加します。"
+            },
+            "heading": {
+              "info": "アイコンの列を非表示にするには、見出しラベルを空白にします。"
+            },
+            "icon_1": {
+              "label": "最初のアイコン"
+            },
+            "image_1": {
+              "label": "最初の画像"
+            },
+            "heading_1": {
+              "label": "最初の見出し"
+            },
+            "icon_2": {
+              "label": "2番目のアイコン"
+            },
+            "image_2": {
+              "label": "2番目の画像"
+            },
+            "heading_2": {
+              "label": "2番目の見出し"
+            },
+            "icon_3": {
+              "label": "3番目のアイコン"
+            },
+            "image_3": {
+              "label": "3番目の画像"
+            },
+            "heading_3": {
+              "label": "3番目の見出し"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             }
           }
         }
@@ -1641,9 +1989,18 @@
             "label": "スタックされました"
           },
           "options__2": {
+<<<<<<< HEAD
             "label": "サムネイル"
           },
           "options__3": {
+=======
+            "label": "2列"
+          },
+          "options__3": {
+            "label": "サムネイル"
+          },
+          "options__4": {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             "label": "サムネイルカルーセル"
           }
         },
@@ -1663,11 +2020,32 @@
         "mobile_thumbnails": {
           "label": "モバイルのレイアウト",
           "options__1": {
+<<<<<<< HEAD
             "label": "サムネイルを表示する"
           },
           "options__2": {
             "label": "サムネイルを非表示にする"
           }
+=======
+            "label": "2列"
+          },
+          "options__2": {
+            "label": "サムネイルを表示する"
+          },
+          "options__3": {
+            "label": "サムネイルを非表示にする"
+          }
+        },
+        "media_position": {
+          "label": "デスクトップのメディア位置",
+          "info": "位置はモバイル用に自動で最適化されます。",
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "右"
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       }
     },
@@ -1696,7 +2074,12 @@
           "content": "商品カード"
         },
         "header__2": {
+<<<<<<< HEAD
           "content": "ブログカード"
+=======
+          "content": "ブログカード",
+          "info": "ブログカードのスタイルは、検索結果のページカードにも適用されます。カードスタイルを変更するには、テーマ設定を更新してください。"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "article_show_date": {
           "label": "日付を表示する"
@@ -1706,7 +2089,11 @@
         },
         "show_rating": {
           "label": "商品の評価を表示",
+<<<<<<< HEAD
           "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#search-results-show-product-rating)"
+=======
+          "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#search-results-section-settings)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "columns_desktop": {
           "label": "デスクトップの列数"
@@ -1834,7 +2221,11 @@
           "label": "セクションを全幅にする"
         },
         "paragraph": {
+<<<<<<< HEAD
           "content": "メールサブスクリプションごとに、お客様アカウントが作成されます。[詳しくはこちら](https://help.shopify.com/en/manual/customers)"
+=======
+          "content": "メールサブスクリプションごとに、お客様アカウントが作成されます。[詳しくはこちら](https://help.shopify.com/manual/customers)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       },
       "blocks": {
@@ -1901,11 +2292,19 @@
           "label": "販売元を表示する"
         },
         "paragraph__1": {
+<<<<<<< HEAD
           "content": "動的レコメンデーションでは、注文や商品の情報を利用して、時間の経過とともに変化し改善していきます。[詳しくはこちら](https://help.shopify.com/en/themes/development/recommended-products)"
         },
         "show_rating": {
           "label": "商品の評価を表示",
           "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/page-types#product-recommendations-show-product-rating)"
+=======
+          "content": "動的レコメンデーションでは、注文や商品の情報を利用して、時間の経過とともに変化し改善していきます。[詳しくはこちら](https://help.shopify.com/themes/development/recommended-products)"
+        },
+        "show_rating": {
+          "label": "商品の評価を表示",
+          "info": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-recommendations-section-settings)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "columns_desktop": {
           "label": "デスクトップの列数"
@@ -1932,6 +2331,34 @@
       "settings": {
         "full_width": {
           "label": "セクションを全幅にする"
+<<<<<<< HEAD
+=======
+        },
+        "desktop_content_position": {
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "中央"
+          },
+          "options__3": {
+            "label": "右"
+          },
+          "label": "デスクトップのコンテンツ位置",
+          "info": "位置はモバイル用に自動で最適化されます。"
+        },
+        "content_alignment": {
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "中央"
+          },
+          "options__3": {
+            "label": "右"
+          },
+          "label": "コンテンツアラインメント"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       },
       "blocks": {
@@ -1951,6 +2378,7 @@
           },
           "name": "テキスト"
         },
+<<<<<<< HEAD
         "button": {
           "settings": {
             "button_label": {
@@ -1960,10 +2388,64 @@
               "label": "ボタンのリンク"
             },
             "button_style_secondary": {
+=======
+        "buttons": {
+          "settings": {
+            "button_label_1": {
+              "label": "最初のボタンのラベル",
+              "info": "ボタンを非表示にするには、ラベルを空白にします。"
+            },
+            "button_link_1": {
+              "label": "最初のボタンのリンク"
+            },
+            "button_style_secondary_1": {
+              "label": "アウトラインボタンのスタイルを使用する"
+            },
+            "button_label_2": {
+              "label": "2番目のボタンのラベル",
+              "info": "ボタンを非表示にするには、ラベルを空白にします。"
+            },
+            "button_link_2": {
+              "label": "2番目のボタンのリンク"
+            },
+            "button_style_secondary_2": {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
               "label": "アウトラインボタンのスタイルを使用する"
             }
           },
           "name": "ボタン"
+<<<<<<< HEAD
+=======
+        },
+        "caption": {
+          "name": "キャプション",
+          "settings": {
+            "text": {
+              "label": "テキスト"
+            },
+            "text_style": {
+              "label": "テキストスタイル",
+              "options__1": {
+                "label": "サブタイトル"
+              },
+              "options__2": {
+                "label": "大文字"
+              }
+            },
+            "caption_size": {
+              "label": "テキストサイズ",
+              "options__1": {
+                "label": "小"
+              },
+              "options__2": {
+                "label": "中"
+              },
+              "options__3": {
+                "label": "大"
+              }
+            }
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       },
       "presets": {
@@ -1997,7 +2479,11 @@
         },
         "description": {
           "label": "動画の代替テキスト",
+<<<<<<< HEAD
           "info": "スクリーンリーダーを使用しているお客様向けにビデオの説明を記入してください。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-features#video)"
+=======
+          "info": "スクリーンリーダーを使用しているお客様向けにビデオの説明を記入してください。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "image_padding": {
           "label": "画像の余白を追加する",
@@ -2073,10 +2559,17 @@
           "name": "共有",
           "settings": {
             "featured_image_info": {
+<<<<<<< HEAD
               "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
             },
             "title_info": {
               "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+=======
+              "content": "SNSの投稿にリンクを含めると、そのページの記事のサムネイルがプレビュー画像として表示されます。[詳しくはこちら](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)"
+            },
+            "title_info": {
+              "content": "プレビュー画像には、ストアタイトルと説明文が表示されます。[詳しくはこちら](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             },
             "text": {
               "label": "テキスト"
@@ -2095,7 +2588,11 @@
           "name": "商品評価",
           "settings": {
             "paragraph": {
+<<<<<<< HEAD
               "content": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn/sections#featured-product-rating)"
+=======
+              "content": "評価を表示するには、商品評価アプリを追加します。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             }
           }
         }
@@ -2116,6 +2613,19 @@
         },
         "hide_variants": {
           "label": "デスクトップで選択されていないバリエーションのメディアを非表示にする"
+<<<<<<< HEAD
+=======
+        },
+        "media_position": {
+          "label": "デスクトップのメディア位置",
+          "info": "位置はモバイル用に自動で最適化されます。",
+          "options__1": {
+            "label": "左"
+          },
+          "options__2": {
+            "label": "右"
+          }
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         }
       },
       "presets": {
@@ -2126,7 +2636,11 @@
       "name": "メール登録者バナー",
       "settings": {
         "paragraph": {
+<<<<<<< HEAD
           "content": "メールサブスクリプションごとに、お客様アカウントが作成されます。[詳しくはこちら](https://help.shopify.com/en/manual/customers)"
+=======
+          "content": "メールサブスクリプションごとに、お客様アカウントが作成されます。[詳しくはこちら](https://help.shopify.com/manual/customers)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "image": {
           "label": "背景画像"
@@ -2145,7 +2659,11 @@
         },
         "show_text_below": {
           "label": "モバイルで画像の下にコンテンツを表示",
+<<<<<<< HEAD
           "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "image_height": {
           "label": "バナーの高さ",
@@ -2161,7 +2679,11 @@
           "options__4": {
             "label": "大"
           },
+<<<<<<< HEAD
           "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+=======
+          "info": "画像のアスペクト比が16:9のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         },
         "desktop_content_position": {
           "options__1": {
@@ -2591,7 +3113,11 @@
                 "label": "リサイクル"
               },
               "options__34": {
+<<<<<<< HEAD
                 "label": "返品"
+=======
+                "label": "戻る"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
               },
               "options__35": {
                 "label": "定規"
@@ -2630,6 +3156,30 @@
       "presets": {
         "name": "折りたたみ可能なコンテンツ"
       }
+<<<<<<< HEAD
+=======
+    },
+    "main-account": {
+      "name": "アカウント"
+    },
+    "main-activate-account": {
+      "name": "アカウントの有効化"
+    },
+    "main-addresses": {
+      "name": "アドレス"
+    },
+    "main-login": {
+      "name": "ログイン"
+    },
+    "main-order": {
+      "name": "注文"
+    },
+    "main-register": {
+      "name": "登録"
+    },
+    "main-reset-password": {
+      "name": "パスワードのリセット"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   }
 }

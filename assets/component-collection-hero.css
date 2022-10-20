@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 .collection-hero{
   margin-top: 6.8rem;
 }
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
@@ -24,7 +27,10 @@
 }
 
 .collection-hero__text-wrapper {
+<<<<<<< HEAD
   margin-top: 4em;
+=======
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   flex-basis: 100%;
 }
 

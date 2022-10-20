@@ -51,7 +51,12 @@
     "slider": {
       "of": "/",
       "next_slide": "Sağa kaydır",
+<<<<<<< HEAD
       "previous_slide": "Sola kaydır"
+=======
+      "previous_slide": "Sola kaydır",
+      "name": "Kaydırıcı"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Ürün bilgisine atla",
     "total_reviews": "toplam değerlendirme",
     "star_reviews_info": "{{ rating_value }}/{{ rating_max }} yıldız",
+<<<<<<< HEAD
     "collapsible_content_title": "Daraltılabilir içerik"
+=======
+    "collapsible_content_title": "Daraltılabilir içerik",
+    "complementary_products": "Tamamlayıcı ürünler"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Tüm ayrıntıları görüntüle",
       "include_taxes": "Vergi dahildir.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
+      "choose_options": "Seçenekleri belirle",
+      "choose_product_options": "{{ product_name }} için seçenekleri belirle",
+      "value_unavailable": "{{ option_value }} [Kullanılamıyor]",
+      "variant_sold_out_or_unavailable": "Varyasyon tükendi veya kullanılamıyor"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Medya galerisi"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Uygula",
       "clear": "Temizle",
+<<<<<<< HEAD
       "clear_all": "Tümünü temizle",
+=======
+      "clear_all": "Tümünü kaldır",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "En düşük",
       "filter_and_sort": "Filtrele ve sırala",
       "filter_by_label": "Filtre:",
@@ -176,7 +198,14 @@
       "sort_button": "Sırala",
       "sort_by_label": "Sıralama ölçütü:",
       "to": "En yüksek",
+<<<<<<< HEAD
       "clear_filter": "Filtreyi temizle"
+=======
+      "clear_filter": "Filtreyi kaldır",
+      "filter_selected_accessibility": "{{ type }} ({{ count }} filtre seçildi)",
+      "show_more": "Daha fazla göster",
+      "show_less": "Daha az göster"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "comment": "Yorum",
         "send": "Gönder",
         "post_success": "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Mümkün olan en kısa sürede size dönüş yapacağız.",
+<<<<<<< HEAD
         "error_heading": "Lütfen aşağıdakileri düzenleyin:"
+=======
+        "error_heading": "Lütfen aşağıdakileri düzenleyin:",
+        "title": "İletişim formu"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +276,12 @@
         "product": "Ürün",
         "price": "Fiyat",
         "total": "Toplam",
+<<<<<<< HEAD
         "quantity": "Adet"
+=======
+        "quantity": "Adet",
+        "image": "Ürün görseli"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Güncelle",
       "login": {
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Tümünü görüntüle",
+<<<<<<< HEAD
       "view_all_label": "{{ collection_name }} koleksiyonundaki tüm ürünleri görüntüle",
       "slider": "Kaydırıcı"
+=======
+      "view_all_label": "{{ collection_name }} koleksiyonundaki tüm ürünleri görüntüle"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Tümünü görüntüle"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Koleksiyon",
       "empty": "Ürün bulunamadı",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">tümünü temizle</a>"
+=======
+      "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">tümünü kaldır</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Videoyu yükle: {{ description }}"
@@ -371,7 +418,11 @@
     },
     "reset_password": {
       "title": "Hesap parolasını sıfırlayın",
+<<<<<<< HEAD
       "subtext": "{{ email }} için yeni bir parola girin",
+=======
+      "subtext": "Yeni bir parola girin",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Parola",
       "password_confirm": "Parolayı doğrula",
       "submit": "Parolayı sıfırla"

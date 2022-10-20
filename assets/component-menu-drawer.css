@@ -70,6 +70,13 @@ details[open].menu-opening > .menu-drawer__submenu {
   visibility: visible;
 }
 
+<<<<<<< HEAD
+=======
+.js .menu-drawer__navigation .submenu-open {
+  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
+}
+
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 @media screen and (min-width: 750px) {
   .menu-drawer {
     width: 40rem;
@@ -198,6 +205,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   background-color: transparent;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
+<<<<<<< HEAD
+=======
+  text-align: left;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 .no-js .menu-drawer__close-button {

@@ -1,6 +1,11 @@
 slideshow-component {
   position: relative;
+<<<<<<< HEAD
   display: block;
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 @media screen and (max-width: 989px) {
@@ -108,8 +113,18 @@ slideshow-component .slideshow.banner {
   border: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 749px) {
   slideshow-component.page-width .slideshow.banner--mobile-bottom + .slideshow__controls {
+=======
+.slideshow__controls--top {
+  order: 2;
+  z-index: 1;
+}
+
+@media screen and (max-width: 749px) {
+  .slideshow__controls--border-radius-mobile {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     border-bottom-right-radius: var(--text-boxes-radius);
     border-bottom-left-radius: var(--text-boxes-radius);
   }

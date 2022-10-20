@@ -35,12 +35,24 @@ customElements.define('details-disclosure', DetailsDisclosure);
 class HeaderMenu extends DetailsDisclosure {
   constructor() {
     super();
+<<<<<<< HEAD
     this.header = document.querySelector('header');
   }
 
   onToggle() {
     if (document.documentElement.style.getPropertyValue('--header-bottom-position-desktop') !== '') return;
     if (this.header) document.documentElement.style.setProperty('--header-bottom-position-desktop', `${Math.floor(this.header.getBoundingClientRect().bottom)}px`);
+=======
+    this.header = document.querySelector('.header-wrapper');
+  }
+
+  onToggle() {
+    if (!this.header) return;
+    this.header.preventHide = this.mainDetailsToggle.open;
+
+    if (document.documentElement.style.getPropertyValue('--header-bottom-position-desktop') !== '') return;
+    document.documentElement.style.setProperty('--header-bottom-position-desktop', `${Math.floor(this.header.getBoundingClientRect().bottom)}px`);
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   }
 }
 

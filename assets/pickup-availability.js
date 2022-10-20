@@ -76,7 +76,11 @@ if (!customElements.get('pickup-availability-drawer')) {
         this.hide();
       });
 
+<<<<<<< HEAD
       this.addEventListener('keyup', () => {
+=======
+      this.addEventListener('keyup', (event) => {
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
         if(event.code.toUpperCase() === 'ESCAPE') this.hide();
       });
     }

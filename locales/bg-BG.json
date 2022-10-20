@@ -51,7 +51,12 @@
     "slider": {
       "of": "от",
       "next_slide": "Плъзгане надясно",
+<<<<<<< HEAD
       "previous_slide": "Плъзгане наляво"
+=======
+      "previous_slide": "Плъзгане наляво",
+      "name": "Плъзгач"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Прескочи към информацията за продукта",
     "total_reviews": "общ брой мнения",
     "star_reviews_info": "{{ rating_value }} от {{ rating_max }} звезди",
+<<<<<<< HEAD
     "collapsible_content_title": "Съдържание, което може да се свива"
+=======
+    "collapsible_content_title": "Съдържание, което може да се свива",
+    "complementary_products": "Допълващи продукти"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Покажи пълните подробности",
       "include_taxes": "С включени данъци.",
+<<<<<<< HEAD
       "shipping_policy_html": "<a href=\"{{ link }}\">Доставката</a> се изчислява при плащане."
+=======
+      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката</a> се изчислява при плащане.",
+      "choose_options": "Изберете опции",
+      "choose_product_options": "Изберете опции за {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [Неналично]",
+      "variant_sold_out_or_unavailable": "Вариантът е изчерпан или неналичен."
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Мултимедийна галерия"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Приложи",
       "clear": "Изчисти",
+<<<<<<< HEAD
       "clear_all": "Изчисти всички",
+=======
+      "clear_all": "Премахване на всички",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "От",
       "filter_and_sort": "Филтриране и сортиране",
       "filter_by_label": "Филтър:",
@@ -176,7 +198,14 @@
       "sort_button": "Сортиране",
       "sort_by_label": "Сортиране по:",
       "to": "Към",
+<<<<<<< HEAD
       "clear_filter": "Изчисти филтъра"
+=======
+      "clear_filter": "Премахване на филтъра",
+      "filter_selected_accessibility": "{{ type }} ({{ count }} избрани филтъра)",
+      "show_more": "Покажи повече",
+      "show_less": "Покажи по-малко"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "send": "Изпрати",
         "post_success": "Благодарим, че се свързахте с нас. Ще се свържем с вас възможно най-скоро.",
         "error_heading": "Коригирайте следното:",
+<<<<<<< HEAD
         "phone": "Телефонен номер"
+=======
+        "phone": "Телефонен номер",
+        "title": "Формуляр за контакт"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -241,7 +275,12 @@
         "product": "Продукт",
         "price": "Цена",
         "total": "Обща сума",
+<<<<<<< HEAD
         "quantity": "Количество"
+=======
+        "quantity": "Количество",
+        "image": "Изображение на продукта"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Актуализиране",
       "note": "Специални инструкции за поръчката",
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Покажи всички",
+<<<<<<< HEAD
       "view_all_label": "Покажи всички продукти в колекция {{ collection_name }}",
       "slider": "Плъзгач"
+=======
+      "view_all_label": "Покажи всички продукти в колекция {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Покажи всички"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Колекция",
       "empty": "Не са открити продукти",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Използвайте по-малко филтри или <a class=\"{{ class }}\" href=\"{{ link }}\">изчистете всички</a>"
+=======
+      "use_fewer_filters_html": "Използвайте по-малко филтри или <a class=\"{{ class }}\" href=\"{{ link }}\">премахнете всички</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Зареждане на видео: {{ description }}"
@@ -365,7 +412,11 @@
     },
     "reset_password": {
       "title": "Подновяване на паролата за профила",
+<<<<<<< HEAD
       "subtext": "Въведете нова парола за {{ email }}",
+=======
+      "subtext": "Въведете нова парола",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Парола",
       "password_confirm": "Потвърждаване на паролата",
       "submit": "Подновяване на паролата"

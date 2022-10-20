@@ -34,7 +34,11 @@
             {{ collection.image | image_url }} {{ collection.image.width }}w"
           src="{{ collection.image | image_url: width: 750 }}"
           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+<<<<<<< HEAD
           alt="{{ collection.title | escape }}"
+=======
+          alt=""
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
           width="{{ collection.image.width }}"
           height="{{ collection.image.height }}"
         >

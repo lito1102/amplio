@@ -51,7 +51,12 @@
     "slider": {
       "of": "από",
       "next_slide": "Σύρετε δεξιά",
+<<<<<<< HEAD
       "previous_slide": "Σύρετε αριστερά"
+=======
+      "previous_slide": "Σύρετε αριστερά",
+      "name": "Ρυθμιστικό"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "newsletter": {
@@ -74,7 +79,12 @@
     "skip_to_product_info": "Μετάβαση στις πληροφορίες προϊόντος",
     "total_reviews": "σύνολο κριτικών",
     "star_reviews_info": "{{ rating_value }} από {{ rating_max }} αστέρια",
+<<<<<<< HEAD
     "collapsible_content_title": "Περιεχόμενο με δυνατότητα σύμπτυξης"
+=======
+    "collapsible_content_title": "Περιεχόμενο με δυνατότητα σύμπτυξης",
+    "complementary_products": "Συμπληρωματικά προϊόντα"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
   },
   "blogs": {
     "article": {
@@ -146,7 +156,15 @@
       },
       "view_full_details": "Προβολή όλων των λεπτομερειών",
       "include_taxes": "Ο φόρος συμπεριλαμβάνεται.",
+<<<<<<< HEAD
       "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς."
+=======
+      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της αγοράς.",
+      "choose_options": "Ορίστε επιλογές",
+      "choose_product_options": "Ορίστε επιλογές για {{ product_name }}",
+      "value_unavailable": "{{ option_value }} [Μη διαθέσιμο]",
+      "variant_sold_out_or_unavailable": "Η παραλλαγή εξαντλήθηκε ή δεν είναι διαθέσιμη"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "modal": {
       "label": "Συλλογή μέσων"
@@ -154,7 +172,11 @@
     "facets": {
       "apply": "Εφαρμογή",
       "clear": "Διαγραφή",
+<<<<<<< HEAD
       "clear_all": "Διαγραφή όλων",
+=======
+      "clear_all": "Κατάργηση όλων",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "from": "Από",
       "filter_and_sort": "Φιλτράρισμα και ταξινόμηση",
       "filter_by_label": "Φιλτράρισμα:",
@@ -176,7 +198,14 @@
       "sort_button": "Ταξινόμηση",
       "sort_by_label": "Ταξινόμηση κατά:",
       "to": "Έως",
+<<<<<<< HEAD
       "clear_filter": "Διαγραφή φίλτρου"
+=======
+      "clear_filter": "Κατάργηση φίλτρου",
+      "filter_selected_accessibility": "{{ type }} (επιλέχθηκαν {{ count }} φίλτρα)",
+      "show_more": "Εμφάνιση περισσότερων",
+      "show_less": "Εμφάνιση λιγότερων"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     }
   },
   "templates": {
@@ -206,7 +235,12 @@
         "comment": "Σχόλιο",
         "send": "Αποστολή",
         "post_success": "Ευχαριστούμε που επικοινωνήσατε μαζί μας. Θα σας απαντήσουμε το συντομότερο δυνατόν.",
+<<<<<<< HEAD
         "error_heading": "Προσαρμόστε τα παρακάτω:"
+=======
+        "error_heading": "Προσαρμόστε τα παρακάτω:",
+        "title": "Φόρμα επικοινωνίας"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       }
     },
     "404": {
@@ -242,7 +276,12 @@
         "product": "Προϊόν",
         "price": "Τιμή",
         "total": "Σύνολο",
+<<<<<<< HEAD
         "quantity": "Ποσότητα"
+=======
+        "quantity": "Ποσότητα",
+        "image": "Εικόνα προϊόντος"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       },
       "update": "Ενημέρωση",
       "login": {
@@ -260,8 +299,12 @@
     },
     "featured_collection": {
       "view_all": "Προβολή όλων",
+<<<<<<< HEAD
       "view_all_label": "Προβολή όλων των προϊόντων στη συλλογή {{ collection_name }}",
       "slider": "Ρυθμιστικό"
+=======
+      "view_all_label": "Προβολή όλων των προϊόντων στη συλλογή {{ collection_name }}"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "collection_list": {
       "view_all": "Προβολή όλων"
@@ -269,7 +312,11 @@
     "collection_template": {
       "title": "Συλλογή",
       "empty": "Δεν βρέθηκαν προϊόντα",
+<<<<<<< HEAD
       "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">διαγράψτε τα όλα</a>"
+=======
+      "use_fewer_filters_html": "Χρησιμοποιήστε λιγότερα φίλτρα ή <a class=\"{{ class }}\" href=\"{{ link }}\">καταργήστε τα όλα</a>"
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
     },
     "video": {
       "load_video": "Φόρτωση βίντεο: {{ description }}"
@@ -371,7 +418,11 @@
     },
     "reset_password": {
       "title": "Επαναφορά κωδικού πρόσβασης λογαριασμού",
+<<<<<<< HEAD
       "subtext": "Εισαγάγετε νέο κωδικό πρόσβασης για το {{ email }}",
+=======
+      "subtext": "Εισαγάγετε νέο κωδικό πρόσβασης",
+>>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "password": "Κωδικός πρόσβασης",
       "password_confirm": "Επιβεβαίωση κωδικού πρόσβασης",
       "submit": "Επαναφορά κωδικού πρόσβασης"
