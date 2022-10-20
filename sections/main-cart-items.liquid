@@ -19,13 +19,7 @@
   }
 {%- endstyle -%}
 
-<<<<<<< HEAD
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-=======
-{%- unless settings.cart_type == 'drawer' -%}
-  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-{%- endunless -%}
->>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
@@ -52,10 +46,6 @@
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
-<<<<<<< HEAD
-=======
-            <caption class="visually-hidden">{{ 'sections.cart.title' | t }}</caption>
->>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
@@ -85,11 +75,7 @@
                   </td>
 
                   <td class="cart-item__details">
-<<<<<<< HEAD
                     {%- if section.settings.show_vendor -%}
-=======
-                    {%- if settings.show_vendor -%}
->>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}
 
@@ -313,15 +299,12 @@
   "name": "t:sections.main-cart-items.name",
   "settings": [
     {
-<<<<<<< HEAD
       "type": "checkbox",
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.main-cart-items.settings.show_vendor.label"
     },
     {
-=======
->>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },

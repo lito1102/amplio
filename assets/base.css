@@ -45,13 +45,8 @@
 
 :root,
 .color-background-1 {
-<<<<<<< HEAD
-	--color-link: var(--color-base-outline-button-labels);
-	--alpha-link: 0.85;
-=======
   --color-link: var(--color-base-outline-button-labels);
   --alpha-link: 0.85;
->>>>>>> 3f89aa54fb43d38f6b7bdd1e1de2d877f2b0e8e9
 }
 
 .color-background-2,
